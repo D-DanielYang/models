@@ -1,7 +1,8 @@
 # 社区模型库
 
-飞桨目前包含260+社区模型，覆盖CV、NLP、推荐等多个领域，详细内容如下表：
+飞桨目前包含570+社区模型，覆盖CV、NLP、推荐等多个领域，详细内容如下表：
 
+## 社区开发者贡献模型
 
 ### 图像分类
 <table>
@@ -1997,3 +1998,1635 @@
         <td><a href="https://github.com/jiamingkong/infoxlm_paddle">快速开始</a></td>
     </tr>
 </table>
+
+## 北理工贡献社区开源模型
+
+
+### 计算机视觉
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>DSH</td>
+        <td><a href="https://paperswithcode.com/paper/deep-supervised-hashing-for-fast-image">Deep Supervised Hashing for Fast Image Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>针对卷积神经网络（CNNs）在学习各种视觉任务的鲁棒图像表示方面的改进，提出的一种新的深度监督散列方法来学习庞大的图像数据的紧凑相似保持二进制代码。</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main/DSH#tdsub">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>HashNet</td>
+        <td><a href="https://paperswithcode.com/paper/hashnet-deep-learning-to-hash-by-continuation">HashNet: Deep Learning to Hash by Continuation</a></td>
+        <td><details><summary>Abstract</summary><div>一种新颖的、具有收敛保证的基于连续法进行深度学习哈希架构，在失衡相似性数据中学习精确二进制哈希代码</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main/Hashnet#tdsub">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Wav2Lip</td>
+        <td><a href="https://paperswithcode.com/paper/a-lip-sync-expert-is-all-you-need-for-speech">A Lip Sync Expert Is All You Need for Speech to Lip Generation In The Wild</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于GAN的说话人脸生成模型，实现了生成视频中嘴唇和音频的高度同步。在音频嘴唇同步指标LSE-D上达到了6.652。</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/Wav2lip_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>A2L_IP_LAP</td>
+        <td><a href="https://paperswithcode.com/paper/identity-preserving-talking-face-generation">Identity-Preserving Talking Face Generation with Landmark and Appearance Priors</a></td>
+        <td><details><summary>Abstract</summary><div>基于transformer的模型，融合了语音、面部关键点等多模态信息，实现了生成面部关键点的动作的生动自然准确。在LPIPS指标上打到了0.0303。</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/IP_LAP_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>L2V_IP_LAP</td>
+        <td><a href="https://paperswithcode.com/paper/identity-preserving-talking-face-generation">Identity-Preserving Talking Face Generation with Landmark and Appearance Priors</a></td>
+        <td><details><summary>Abstract</summary><div>融合面部关键点信息和面部纹理特征信息，实现了身份信息保留的从面部关键点到人脸视频渲染的过程。在SSIM指标上达到了0.9399</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/IP_LAP_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>JoMoLD</td>
+        <td><a href="https://paperswithcode.com/paper/joint-modal-label-denoising-for-weakly#code">Joint-Modal Label Denoising for Weakly-Supervised Audio-Visual Video Parsing</a></td>
+        <td><details><summary>Abstract</summary><div>对每个模态中小批量的所有实例的损失进行排序，然后根据模态内和模态间损失的关系选择噪声样本。此外，提出了一种简单但有效的噪声比率估计方法，通过计算置信度低于预设阈值的实例比例来实现。该方法在前沿技术上取得了显著进步（例如，在片段级视觉度量中从60.0%提高到63.8%），证明了该方法的有效性。</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/JoMoLD_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>CM-Co-Occurrence-AVVP</td>
+        <td><a href="https://paperswithcode.com/paper/exploring-cross-video-and-cross-modality">Exploring Cross-Video and Cross-Modality Signals for Weakly-Supervised Audio-Visual Video Parsing </a></td>
+        <td><details><summary>Abstract</summary><div>提出了一种方法，通过探索跨视频和跨模态的监督信号来辅助弱监督音视频视频解析。这种方法利用了视频之间的共同和不同的事件语义，来识别音频或视觉事件。此外，还探索了音频、视觉和音视频流之间的事件共现情况，利用这种跨模态共现来定位目标事件的片段，同时排除无关片段。通过不同视频和模态之间发现的监督信号，可以极大地促进仅使用视频级标注的训练。在Type@AV, and Event@AV达到了60.5和59.5</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/CM-Co-Occurrence-AVVP_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>MLS3RDUH</td>
+        <td><a href="https://github.com/rongchengtu1/MLS3RDUH">MLS3RDUH: Deep Unsupervised Hashing via Manifold based Local Semantic Similarity Structure Reconstructing</a></td>
+        <td><details><summary>Abstract</summary><div>利用流形相似性和余弦相似性来重构局部语义相似结构，进而定义了新的相似性矩阵，并使用新的对数双曲哈希损失函数来优化哈希网络</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/MLS3RDUH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>ADSH</td>
+        <td><a href="https://github.com/jiangqy/ADSH-AAAI2018">Asymmetric Deep Supervised Hashing</a></td>
+        <td><details><summary>Abstract</summary><div>通过仅对查询点进行特征学习并直接学习数据库点的二进制哈希码，实现对查询点和数据库点的不对称处理，实现了更高效的训练和更佳的检索性能</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/ADSH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>DPSH</td>
+        <td><a href="https://github.com/jiangqy/DPSH-pytorch">Feature Learning based Deep Supervised Hashing with Pairwise Labels</a></td>
+        <td><details><summary>Abstract</summary><div>提出了首个端到端的深度哈希方法DPSH，实现了同时进行特征学习和哈希码学习的功能，并在图像检索应用中取得了 state-of-the-art 的性能</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/DPSH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>SSDH</td>
+        <td><a href="https://github.com/TreezzZ/SSDH_PyTorch">Semantic Structure-based Unsupervised Deep Hashing</a></td>
+        <td><details><summary>Abstract</summary><div>通过构建语义结构并设计成对损失函数来保留语义关系，在无监督情况下学习哈希码，显著优于当前的无监督深度哈希方法</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/SSDH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>BoxeR</td>
+        <td><a href="https://paperswithcode.com/paper/boxer-box-attention-for-2d-and-3d">BoxeR: Box-Attention for 2D and 3D Transformers</a></td>
+        <td><details><summary>Abstract</summary><div>BoxeR预测输入特征的兴趣框相对于参考窗口的平移和尺寸变换，从而注意到变换后兴趣框内的网格特征。</div></details></td>
+        <td><a href="https://github.com/IzuiZero/BoxeR-main-paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>SAM-DETR</td>
+        <td><a href="https://paperswithcode.com/paper/accelerating-detr-convergence-via-semantic">Accelerating DETR Convergence via Semantic-Aligned Matching</a></td>
+        <td><details><summary>Abstract</summary><div> SAM-DETR是一种语义对齐匹配的 DETR，极大地加速了 DETR 的收敛而不牺牲其准确性。首先，它将对象查询投影到与编码图像特征相同的嵌入空间中，其中可以通过对齐的语义有效地完成匹配。其次，它显式搜索具有最具辨别力的特征的显着点以进行语义对齐匹配，这进一步加快了收敛速度并提高了检测精度。</div></details></td>
+        <td><a href="https://github.com/IzuiZero/SAM-DETR-main-paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>TCTrack</td>
+        <td><a href="https://paperswithcode.com/paper/tctrack-temporal-contexts-for-aerial-tracking">TCTrack: Temporal Contexts for Aerial Tracking</a></td>
+        <td><details><summary>Abstract</summary><div>TCTrack是一个充分利用时间上下文进行空中跟踪的综合框架，对于特征提取，提出了一种在线时间自适应卷积，以利用时间信息增强空间特征；对于相似性图细化，提出了一种自适应时间变换器，它首先以内存有效的方式有效地编码时间知识，然后对时间知识进行解码以精确调整相似性图。</div></details></td>
+        <td><a href="https://github.com/IzuiZero/TCTrack-main-paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>Omni-DETR</td>
+        <td><a href="https://paperswithcode.com/paper/omni-detr-omni-supervised-object-detection">Omni-DETR: Omni-Supervised Object Detection with Transformers</a></td>
+        <td><details><summary>Abstract</summary><div> Omni-DETR是一个使用 Transformer 进行全方位监督的目标检测的架构，该架构基于学生-教师框架和基于端到端变压器的对象检测的最新进展，可以利用不同类型的弱标签，通过基于二分匹配的过滤机制生成准确的伪标签供模型学习。</div></details></td>
+        <td><a href="https://github.com/IzuiZero/omni-detr-main-paddle">快速开始</a></td>
+    </tr>
+</table>
+
+### 自然语言处理
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>VDSH</td>
+        <td><a href="https://paperswithcode.com/paper/variational-deep-semantic-hashing-for-text"> Variational Deep Semantic Hashing for Text Documents</a></td>
+        <td><details><summary>Abstract</summary><div> 融合深度生成模型自然地将概率生成模型的表达能力与深度神经网络的高容量方法，以提高文本建模任务中的表现力。</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main/VDSH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>VDSH-S</td>
+        <td><a href="https://paperswithcode.com/paper/variational-deep-semantic-hashing-for-text"> Variational Deep Semantic Hashing for Text Documents</a></td>
+        <td><details><summary>Abstract</summary><div> 使用相同标签与单词的图像对和相应的相似性标签来训练网络，以高效保留原始数据结构相似性。</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main/VDSH-S#tdsub">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>VDNSH-SP</td>
+        <td><a href="https://paperswithcode.com/paper/variational-deep-semantic-hashing-for-text">Variational Deep Semantic Hashing for Text Documents</a></td>
+        <td><details><summary>Abstract</summary><div>区分化训练私有文档变量以及非共享标签信息，结合深度模型对于文本建模任务中的表征能力构建新兴的神经网络模型。</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main/VDSH-SP#tdsub">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>W2NER</td>
+        <td><a href="https://paperswithcode.com/paper/unified-named-entity-recognition-as-word-word">Unified Named Entity Recognition as Word-Word Relation Classification</a></td>
+        <td><details><summary>Abstract</summary><div>一个统一的NER神经网络框架，提出了一种多粒度二维卷积方法来充分捕获近距词和远距词之间的相互作用，论文达到14个NER数据集的sota结果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/W2NER">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>CLNNER</td>
+        <td><a href="https://paperswithcode.com/paper/unified-named-entity-recognition-as-word-word">Unified Named Entity Recognition as Word-Word Relation Classification</a></td>
+        <td><details><summary>Abstract</summary><div>一种bert-based 自定义编码及解码的拓展性极高的模型，基于词头尾链接与多种嵌入表示融合，在多个主流NER任务中接近sota结果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/CLNNER">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>MRN</td>
+        <td><a href="https://paperswithcode.com/paper/mrn-a-locally-and-globally-mention-based">MRN: A Locally and Globally Mention-Based Reasoning Network for Document-Level  Relation Extraction</a></td>
+        <td><details><summary>Abstract</summary><div>提出了一种新的基于提及的推理(MRN)模块，该模块基于显式和协作的局部和全局推理，联合预测实体关系，在三个广泛使用的关系抽取数据集上达到当时的sota结果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/MRN">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>LMBRN</td>
+        <td><a href="https://paperswithcode.com/paper/mrn-a-locally-and-globally-mention-based">MRN: A Locally and Globally Mention-Based Reasoning Network for Document-Level  Relation Extraction</a></td>
+        <td><details><summary>Abstract</summary><div>提出了一种基于提及的推理网络，在关系提取中区分远近实体提及的影响，同时考虑局部上下文之间的相互作用，显式推理提及之间的关联关系，在DocRED关系抽取数据集上接近sota结果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/LBMRN">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>GMBRN</td>
+        <td><a href="https://paperswithcode.com/paper/mrn-a-locally-and-globally-mention-based">MRN: A Locally and Globally Mention-Based Reasoning Network for Document-Level  Relation Extraction</a></td>
+        <td><details><summary>Abstract</summary><div>提出了一个协同预测器来与推理网络中的提及推理块协同工作，并且使用全局特征预测一对实体之间的关系，通过多跳提及级推理块和协作预测器捕获全局上下文信息以及近距离提及交互，在DocRED关系抽取数据集上接近sota结果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/GBMRN">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>HiTrans</td>
+        <td><a href="https://paperswithcode.com/paper/hitrans-a-transformer-based-context-and">HiTrans: A Transformer-Based Context- and Speaker-Sensitive Model for Emotion  Detection in Conversations</a></td>
+        <td><details><summary>Abstract</summary><div>利用BERT作为低级转换器来生成局部话语表示，并将它们馈送到另一个高级转换器中，以便话语表示可以对对话的全局上下文敏感，在MELD情感抽取数据集上达到了接近sota的结果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/HiTrans">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Emory</td>
+        <td><a href="https://paperswithcode.com/paper/hitrans-a-transformer-based-context-and">HiTrans: A Transformer-Based Context- and Speaker-Sensitive Model for Emotion  Detection in Conversations</a></td>
+        <td><details><summary>Abstract</summary><div>在传统情感抽取模型中，增加辅助任务来使模型对说话人敏感，增加话语说话人验证模块(PUSV)，实现对话过程中的不同对话者的情感继承，在Emory情感抽取数据集上达到了接近sota的结果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/Emory">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>ERC</td>
+        <td><a href="https://paperswithcode.com/paper/hitrans-a-transformer-based-context-and">HiTrans: A Transformer-Based Context- and Speaker-Sensitive Model for Emotion  Detection in Conversations</a></td>
+        <td><details><summary>Abstract</summary><div>设计了一个transformer双重模型框架，有效地捕捉对话和说话人的整个语境信息，并设置多任务学习模式来辅助情感抽取的连续判断，在IEMOCAP情感抽取数据集上达到了接近sota的结果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/ERC">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>PURE-entity</td>
+        <td><a href="https://paperswithcode.com/paper/a-frustratingly-easy-approach-for-joint">A Frustratingly Easy Approach for Entity and Relation Extraction</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于transformers预训练模型的实体抽取模型，在模型早期融合全局信息，极大提高了模型推理的速度。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/PURE-entity">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>PURE-relation</td>
+        <td><a href="https://paperswithcode.com/paper/a-frustratingly-easy-approach-for-joint">A Frustratingly Easy Approach for Entity and Relation Extraction</a></td>
+        <td><details><summary>Abstract</summary><div>一种简单有效的端到端关系提取方法，学习两个独立的编码器分别用于实体识别和关系提取，在关系模型的早期融合实体信息并结合全局上下文，在三个数据集下接近sota结果并极大提高推理速度。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/PURE-relation">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>EEQA-ED</td>
+        <td><a href="https://paperswithcode.com/paper/event-extraction-by-answering-almost-natural">Event Extraction by Answering (Almost) Natural Questions</a></td>
+        <td><details><summary>Abstract</summary><div>一种用于事件抽取的trigger模型，提出了一种基于问题回答（QA）的框架，通过将事件触发词识别任务转化为QA问题来进行事件抽取。该模型利用BERT等预训练模型来生成问题和候选答案的表示，充分捕捉上下文信息，并在ACE 2005数据集上达到了SOTA（state-of-the-art）结果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/EEQA-ED">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>RCEE-ED</td>
+        <td><a href="https://paperswithcode.com/paper/event-extraction-as-machine-reading">Event Extraction as Machine Reading Comprehension</a></td>
+        <td><details><summary>Abstract</summary><div>采用基于依赖解析的结构，通过利用依赖树来捕捉句法信息，从而更好地识别事件触发词。该模型引入了图神经网络（GNN）来处理依赖树中的节点和边，增强了模型对复杂句法结构的理解能力，并在ACE 2005数据集上达到了SOTA（state-of-the-art）结果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/RCEE-ED">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>MLEE-ED</td>
+        <td><a href="https://paperswithcode.com/paper/event-extraction-by-answering-almost-natural">Event Extraction across Multiple Levels of Biological Organization</a></td>
+        <td><details><summary>Abstract</summary><div>提出了一种基于预定义的事件触发词的模板问答机制，利用该机制对事件触发词进行模板问答抽取，在mlee数据集上实现了接近sota的效果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/MLEE-ED">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>EEQA-EAE</td>
+        <td><a href="https://paperswithcode.com/paper/event-extraction-by-answering-almost-natural">Event Extraction by Answering (Almost) Natural Questions</a></td>
+        <td><details><summary>Abstract</summary><div>一个针对事件抽取的argument模型，采用与EEQA-ED相同的基于问题回答（QA）框架，将事件论元识别任务转化为QA问题来进行事件抽取。通过生成问题和候选答案的表示，该模型能够有效地捕捉事件论元的上下文信息，并在ACE 2005数据集上取得了接近SOTA的表现。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/EEQA-EAE">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>RCEE-EAE</td>
+        <td><a href="https://paperswithcode.com/paper/event-extraction-as-machine-reading">Event Extraction as Machine Reading Comprehension</a></td>
+        <td><details><summary>Abstract</summary><div>采用基于依赖解析的结构，通过利用依赖树来识别事件论元。该模型引入了图神经网络（GNN），以处理依赖树中的节点和边，从而更准确地捕捉事件论元的上下文信息，并在ACE 2005数据集上取得了接近SOTA的表现。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/RCEE-EAE">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>MLEE-EAE</td>
+        <td><a href="https://paperswithcode.com/paper/event-extraction-by-answering-almost-natural">Event Extraction across Multiple Levels of Biological Organization</a></td>
+        <td><details><summary>Abstract</summary><div>提出了基于事件触发词和预定义事件论元模板的问答方法，通过与原文拼接实现针对性地事件论元抽取，在mlee数据集上实现了接近sota的效果。</div></details></td>
+        <td><a href="https://github.com/Lyfralston/PaddlePaddle/tree/main/MLEE-EAE">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>QAnet</td>
+        <td><a href="https://paperswithcode.com/paper/qanet-combining-local-convolution-with-global">QANET: COMBINING LOCAL CONVOLUTION WITH GLOBAL SELF-ATTENTION FOR READING  COMPREHENSION</a></td>
+        <td><details><summary>Abstract</summary><div>QANet不依赖循环神经网络，仅使用卷积和自注意力来分别建模局部和全局交互，这使得在SQuAD数据集上的训练速度比传统模型快3到13倍，推理速度快4到9倍。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/QAnet">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>SongNet</td>
+        <td><a href="https://paperswithcode.com/paper/rigid-formats-controlled-text-generation">Rigid Formats Controlled Text Generation</a></td>
+        <td><details><summary>Abstract</summary><div>提出了一种名为SongNet的框架，基于Transformer的自回归语言模型，通过特别设计的符号集和改进的注意力机制，以及预训练和微调框架，有效地处理了需要严格遵循预定义格式、韵律方案，并保证句子完整性的特殊文本生成任务（如歌词、十四行诗、宋词等）。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/SongNet">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>Guyu</td>
+        <td><a href="https://paperswithcode.com/paper/an-empirical-investigation-of-pre-trained">An Empirical Investigation of Pre-Trained Transformer Language Models for  Open-Domain Dialogue Generation</a></td>
+        <td><details><summary>Abstract</summary><div>结合新闻和维基百科中英文语料对基于Transformer的自回归语言模型在开放域对话生成任务上进行预训练。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/Guyu">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td>GPT2（系列）</td>
+        <td><a href="https://paperswithcode.com/paper/language-models-are-unsupervised-multitask">Language Models are Unsupervised Multitask Learners</a></td>
+        <td><details><summary>Abstract</summary><div>GPT-2是一个至多可达1.5B参数的Transformer，它在零样本设置下，在8个测试语言建模数据集中的7个上实现了当时最先进的结果。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_gpt2.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td>OPT-125M</td>
+        <td><a href="https://paperswithcode.com/paper/opt-open-pre-trained-transformer-language">OPT: Open Pre-trained Transformer Language Models</a></td>
+        <td><details><summary>Abstract</summary><div>OPT是一套开源的仅解码器的预训练Transformer，参数范围从125M到175B不等，并且OPT-175B与GPT-3相当，而模型开发过程只需要七分之一的碳足迹。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_opt.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>GPT-Neo-125M</td>
+        <td><a href="https://paperswithcode.com/paper/gpt-neox-20b-an-open-source-autoregressive-1">GPT-NeoX-20B: An Open-Source Autoregressive Language Model</a></td>
+        <td><details><summary>Abstract</summary><div>GPT-NeoX-20B是一种特别强大的少样本推理模型，在适配只有5个样本的下游任务时，其性能远高于类似大小的GPT-3和FairSeq模型，GPT-Neo是与其架构相似的小规模版本。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_gpt_neo.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td>BLOOM-396M-zh</td>
+        <td><a href="https://paperswithcode.com/paper/bloom-a-176b-parameter-open-access">BLOOM: A 176B-Parameter Open-Access Multilingual Language Model</a></td>
+        <td><details><summary>Abstract</summary><div>BLOOM是一个176B参数的开放访问语言模型，它是在ROOT语料库上训练的，在各种基准测试中都能获得有竞争力的性能，在经过多任务提示的微调后，效果会更强。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_bloom.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td>TinyLlama-1.1B</td>
+        <td><a href="https://paperswithcode.com/paper/llama-open-and-efficient-foundation-language-1">LLaMA: Open and Efficient Foundation Language Models</a></td>
+        <td><details><summary>Abstract</summary><div>TinyLlama项目旨在在3万亿词元上预训练一个11亿参数的Llama模型。通过适当的优化，可以使用16个A100-40G GPU在“仅”90天内实现这一目标。TinyLlama的紧凑性使其能够满足大量需要有限计算和内存占用的应用场景。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_llama.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td>Unlikelihood Training Token-Level</td>
+        <td><a href="https://paperswithcode.com/paper/neural-text-generation-with-unlikelihood">Neural Text Generation with Unlikelihood Training</a></td>
+        <td><details><summary>Abstract</summary><div>Unlikelihood Training迫使现实文本中不太可能出现的序列被模型分配较低的概率。Token-Level的Unlikelihood  Training在保持模型困惑度的同时提供了更低重复度的文本，使用标准贪心搜索或束搜索提供了更高级的生成文本。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_unlikelihood_token.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td>Unlikelihood Training Sequence-Level</td>
+        <td><a href="https://paperswithcode.com/paper/neural-text-generation-with-unlikelihood">Neural Text Generation with Unlikelihood Training</a></td>
+        <td><details><summary>Abstract</summary><div>Unlikelihood Training迫使现实文本中不太可能出现的序列被模型分配较低的概率。Sequence-Level的Unlikelihood  Training在保持模型困惑度的同时提供了更低重复度的文本，使用标准贪心搜索或束搜索提供了更高级的生成文本。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_unlikelihood_seq.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>ScaleGrad</td>
+        <td><a href="https://paperswithcode.com/paper/straight-to-the-gradient-learning-to-use-1">Straight to the Gradient: Learning to Use Novel Tokens for Neural Text Generation</a></td>
+        <td><details><summary>Abstract</summary><div>ScaleGrad过直接操纵梯度信息，使模型学会使用新的词元，它不仅在开放式生成中有效，而且在定向生成任务中也有效。由于结构简单，ScaleGrad可以作为一个通用的训练目标，适用于大多数文本生成任务。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_scalegrad.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td>SimCTG</td>
+        <td><a href="https://paperswithcode.com/paper/a-contrastive-framework-for-neural-text">A Contrastive Framework for Neural Text Generation</a></td>
+        <td><details><summary>Abstract</summary><div>SimCTG作为一种对比训练目标，可以用于校准模型的表示空间，有效缓解模型退化问题。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_simctg.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>32</td>
+        <td>DITTO</td>
+        <td><a href="https://paperswithcode.com/paper/learning-to-break-the-loop-analyzing-and">Learning to Break the Loop: Analyzing and Mitigating Repetitions for Neural Text  Generation</a></td>
+        <td><details><summary>Abstract</summary><div>DITTO方法可以使模型学习从伪重复数据中惩罚句子级重复的概率，在不牺牲困惑的情况下减少了重复问题，而且实现了更好的生成质量。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_ditto.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>33</td>
+        <td>Qwen/Qwen1.5-0.5B</td>
+        <td><a href="https://paperswithcode.com/paper/qwen-technical-report">Qwen Technical Report</a></td>
+        <td><details><summary>Abstract</summary><div>大型语言模型（LLM）彻底改变了人工智能领域，实现了以前被认为是人类独有的自然语言处理任务。在这项工作中，我们将介绍Qwen，这是我们的大型语言模型系列的第一部分。Qwen是一个综合性的语言模型系列，包含不同参数计数的不同模型。它包括Qwen，基本的预训练语言模型，以及Qwen Chat，这些聊天模型使用人类对齐技术进行了微调。基本语言模型在许多下游任务中始终表现出优异的性能，而聊天模型，尤其是那些使用人类反馈强化学习（RLHF）训练的聊天模型，具有很强的竞争力。聊天模型具有创建代理应用程序的高级工具使用和规划功能，即使与使用代码解释器等复杂任务的大型模型相比，也能显示出令人印象深刻的性能。此外，我们还开发了专门的编码模型Code Qwen和Code Qwen Chat，以及基于基本语言模型的数学模型Math Qwen Chat。与开源模型相比，这些模型的性能显著提高，略落后于专有模型。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_qwen.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>34</td>
+        <td>AI-Sweden-Models/gpt-sw3-126m</td>
+        <td><a href="https://paperswithcode.com/paper/gpt-sw3-an-autoregressive-language-model-for">GPT-SW3: An Autoregressive Language Model for the Nordic Languages</a></td>
+        <td><details><summary>Abstract</summary><div>本文详细介绍了为北欧语言开发第一个本地大型生成语言模型GPT-SW3的过程。我们涵盖了开发过程的所有部分，从数据收集和处理、培训配置和指令微调，到发布策略的评估和考虑。我们希望本文能为其他从事小型语言大型生成模型开发的研究人员提供指导和参考。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_gpt_sw3.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>35</td>
+        <td>facebook/galactica-125m</td>
+        <td><a href="https://paperswithcode.com/paper/galactica-a-large-language-model-for-science-1">Galactica: A Large Language Model for Science</a></td>
+        <td><details><summary>Abstract</summary><div>信息过载是科学进步的主要障碍。科学文献和数据的爆炸性增长使得在大量信息中发现有用的见解变得越来越困难。今天，科学知识是通过搜索引擎获取的，但它们无法单独组织科学知识。在本文中，我们介绍了Galactica：一个可以存储、组合和推理科学知识的大型语言模型。我们在大量科学论文、参考资料、知识库和许多其他来源的基础上进行培训。我们在一系列科学任务上优于现有模型。在LaTeX方程等技术知识探针上，Galactica的性能优于最新的GPT-3，分别为68.2%和49.0%。Galactica在推理方面也表现出色，在数学MMLU方面比Chinchilla高41.3%至35.7%，在MATH方面比PaLM 540B高20.4%至8.8%。它还为PubMedQA和MedMCQA等下游任务设定了77.6%和52.9%的新技术。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_galactica.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>36</td>
+        <td>deepseek-ai/deepseek-coder-1.3b-base</td>
+        <td><a href="https://paperswithcode.com/paper/deepseek-coder-when-the-large-language-model">DeepSeek LLM: Scaling Open-Source Language Models with Longtermism</a></td>
+        <td><details><summary>Abstract</summary><div>大型语言模型的快速发展使软件开发中的代码智能发生了革命性的变化。然而，闭源模型的优势限制了广泛的研究和开发。为了解决这一问题，我们推出了DeepSeek编码器系列，这是一系列大小从1.3B到33B的开源代码模型，在2万亿代币上从头开始训练。这些模型是在高质量的项目级代码语料库上预先训练的，并使用具有16K窗口的填空任务来增强代码生成和填充。我们的广泛评估表明，DeepSeek Coder不仅在多个基准测试的开源代码模型中实现了最先进的性能，而且超过了Codex和GPT-3.5等现有的闭源代码模型。此外，DeepSeek编码器模型受许可，允许研究和不受限制的商业使用。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_deepseek_coder.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>37</td>
+        <td>internlm/internlm2-1_8b</td>
+        <td><a href="https://paperswithcode.com/paper/internlm2-technical-report">InternLM2 Technical Report</a></td>
+        <td><details><summary>Abstract</summary><div>像ChatGPT和GPT-4这样的大型语言模型（LLM）的发展引发了关于通用人工智能（AGI）出现的讨论。然而，在开源模型中复制这些进步一直是一项挑战。本文介绍了InternetLM2，这是一种开源LLM，通过创新的预训练和优化技术，在6个维度和30个基准的综合评估、长上下文建模和开放式主观评估方面优于其前身。InternetLM2的预训练过程非常详细，强调了各种数据类型的准备，包括文本、代码和长上下文数据。InternetLM2有效地捕获了长期依赖性，使用监督微调（SFT）和一种新的从人类反馈中进行条件在线强化学习（COOL RLHF）策略进行了进一步调整，该策略解决了人类偏好冲突和奖励黑客攻击。通过发布InternetLM2模型，我们为社区提供了对模型演变的见解。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_internlm2.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>38</td>
+        <td>EleutherAI/pythia-70m</td>
+        <td><a href="https://paperswithcode.com/paper/pythia-a-suite-for-analyzing-large-language">Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling</a></td>
+        <td><details><summary>Abstract</summary><div>Pythia是一套16个LLM，所有LLM都是在以完全相同的顺序看到的公共数据上训练的，大小从70M到12B不等。我们为16个模型中的每一个提供了154个检查点的公共访问权限，以及下载和重建其精确训练数据加载器的工具，以供进一步研究。Pythia能够促进许多领域的研究，包括记忆方面的新结果、术语频率对少镜头表现的影响，以及减少性别偏见。我们证明，这种高度受控的设置可以用于产生对LLM及其训练动态的新见解。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_pythia.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>39</td>
+        <td>microsoft/phi-1_5</td>
+        <td><a href="https://paperswithcode.com/paper/textbooks-are-all-you-need-ii-phi-1-5">Textbooks Are All You Need II: phi-1.5 technical report</a></td>
+        <td><details><summary>Abstract</summary><div>phi-1是一个1000万参数的模型，可以生成连贯的英语文本；phi-2是13亿参数的模型。Python编码性能接近最先进水平。后一项工作建议使用现有的大型语言模型（LLM）生成“教科书质量”数据，作为与传统网络数据相比增强学习过程的一种方式。我们遵循“教科书就是你所需要的一切”方法，这次重点关注自然语言中的常识推理，并创建了一个新的13亿参数模型phi-1.5，在自然语言任务中的性能相当到大5倍的模型，在更复杂的推理任务（如小学数学和基本编码）上超过了大多数非前沿LLM。</div></details></td>
+        <td><a href="https://github.com/maziao/Huggingface-PaddlePaddle/blob/main/scripts/run_phi.sh">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td>DPR</td>
+        <td><a href="https://paperswithcode.com/paper/dense-passage-retrieval-for-open-domain">Dense passage retrieval for open-domain question answering</a></td>
+        <td><details><summary>Abstract</summary><div>DPR是一种用于信息检索的模型，它通过将问题和文档嵌入到同一向量空间中，然后通过计算它们之间的向量相似性来检索相关文档。</div></details></td>
+        <td><a href="https://github.com/ZhangYHe/Paddle_IR_projects/tree/main/DPR">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>41</td>
+        <td>Contriever</td>
+        <td><a href="https://paperswithcode.com/paper/towards-unsupervised-dense-information">Unsupervised dense information retrieval with contrastive learning</a></td>
+        <td><details><summary>Abstract</summary><div>Contriever模型是一种先进的、无监督的密集信息检索模型，由Gautier Izacard等人提出，其详细描述见于论文《Unsupervised Dense Information Retrieval with Contrastive Learning》。Contriever模型使用对比学习方法，在没有任何监督信息的情况下训练密集检索器，并在各种检索设置中展现出了强大的性能。</div></details></td>
+        <td><a href="https://github.com/ZhangYHe/Paddle_IR_projects/tree/main/Contriever">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>42</td>
+        <td>ColBERT</td>
+        <td><a href="https://paperswithcode.com/paper/colbert-efficient-and-effective-passage">ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT</a></td>
+        <td><details><summary>Abstract</summary><div>ColBERT是一种基于BERT的高效信息检索模型，旨在解决大规模检索任务中的准确性和效率问题。通过引入一种名为“Late Interaction”的技术，ColBERT能够在保持深度语义理解能力的同时，显著提高检索速度。ColBERT独特地对查询和文档的每个词生成独立的向量表示，而不是将整个查询或文档映射到单一的密集向量。这种细粒度表示允许模型在词级别上进行更精细的相似度计算。</div></details></td>
+        <td><a href="https://github.com/ZhangYHe/Paddle_IR_projects/tree/main/ColBERT">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>43</td>
+        <td>COIL-tok</td>
+        <td><a href="https://paperswithcode.com/paper/coil-revisit-exact-lexical-match-in">COIL: Revisit exact lexical match in information retrieval with contextualized inverted list</a></td>
+        <td><details><summary>Abstract</summary><div>COIL-tok (Contextualized Inverted List with token-only model) 是一种信息检索模型，主要侧重于利用BERT等预训练语言模型对查询和文档中的单个词汇进行编码，然后计算这些词汇之间的相似性得分。COIL-tok不涉及文档级的语义信息，它通过计算查询和文档中每个词汇的点积相似度，并通过最大池化操作提取最有价值的特征，以此来评估查询和文档之间的相关性。这种模型结构简单，主要用于那些侧重词汇级匹配的场景，能够有效捕捉查询和文档之间的细粒度相似性。</div></details></td>
+        <td><a href="https://github.com/ZhangYHe/Paddle_IR_projects/tree/main/COIL-tok">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>44</td>
+        <td>COIL-full</td>
+        <td><a href="https://paperswithcode.com/paper/coil-revisit-exact-lexical-match-in">COIL: Revisit exact lexical match in information retrieval with contextualized inverted list</a></td>
+        <td><details><summary>Abstract</summary><div>COIL-full (Contextualized Inverted List with full context model) 计算词汇级的相似性，还加入了文档级的语义匹配。在COIL-full模型中，除了使用预训练语言模型对查询和文档中的词汇进行编码和计算相似度外，还特别引入了对CLS向量的处理。CLS向量通常被用作句子或文档的整体语义表示，在COIL-full中，通过计算查询和文档的CLS向量之间的点积来评估它们的整体语义相关性。此外，COIL-full还包括了层归一化（Layer Normalization）操作，以提高模型的训练稳定性和性能。这使得COIL-full在处理包含丰富语义信息的复杂查询时表现更为出色，能够更全面地理解查询意图和文档内容。</div></details></td>
+        <td><a href="https://github.com/ZhangYHe/Paddle_IR_projects/tree/main/COIL-full">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>45</td>
+        <td>DCE</td>
+        <td><a href="https://paperswithcode.com/paper/learning-diverse-document-representations">Learning Diverse Document Representations with Deep Query Interactions for Dense Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>DCE模型（Dual Cross Encoder）是一种用于密集文档检索的框架。该模型旨在通过深度的查询交互提升文档的表示多样性，从而改进检索质量和效率。DCE模型特别关注于如何通过交叉编码器来捕捉查询和文档间的深层交互信息。不同于传统的Bi-encoder，该模型能够同时处理查询和文档，通过交叉编码器生成的丰富表示来优化检索效果。通过这种结合了深度语义理解和高效检索机制的方法，DCE模型在多个标准信息检索和问答数据集上都显示出了优越的性能，证明了其在实际应用中的潜力和有效性。</div></details></td>
+        <td><a href="https://github.com/ZhangYHe/Paddle_IR_projects/tree/main/DCE">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>46</td>
+        <td>ANCE</td>
+        <td><a href="https://paperswithcode.com/paper/approximate-nearest-neighbor-negative">Approximate nearest neighbor negative contrastive learning for dense text retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>ANCE（Approximate Nearest Neighbor Negative Contrastive Estimation）是一种用于密集文本检索的学习方法。其核心思想是从整个语料库中选择负样本（即不相关的文档），利用异步更新的最近邻索引（ANN）。这种方法能够从索引中检索出对当前密集检索（DR）模型具有挑战性的“最难”负样本。这些负样本因具有较高的训练损失和梯度范数上限，从而有助于模型的训练收敛​​。在训练过程中，ANCE使用BERT Siamese/Dual Encoder结构，采用点积相似性和负对数似然（NLL）损失函数。这种方法首先使用预训练的BM25模型生成初始训练数据，然后进行模型训练和ANN索引的周期性更新，以维护索引的实时性​​。</div></details></td>
+        <td><a href="https://github.com/ZhangYHe/Paddle_IR_projects/tree/main/ANCE">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>47</td>
+        <td>CLIM</td>
+        <td><a href="https://paperswithcode.com/paper/clim-contrastive-language-image-mosaic-for">CLIM: Contrastive Language-Image Mosaic for Region Representation</a></td>
+        <td><details><summary>Abstract</summary><div>CLIM 是一个使用对比学习进行开放词汇物体检测的创新架构。该架构基于图像-文本对的对比学习，通过将多个图像组合成拼图图像并将每个图像视为“伪区域”，实现区域和文本表示的对齐。CLIM 结合了最新的对比学习技术和大规模图像-文本对，通过对比损失机制生成高质量的伪标签供模型学习，避免了昂贵的框注释需求。该方法适用于多种开放词汇物体检测模型，并在 OV-COCO 和 OV-LVIS 基准测试中展示了显著的性能提升。</div></details></td>
+        <td><a href="https://github.com/IzuiZero/CLIM-main-Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>48</td>
+        <td>C2AM</td>
+        <td><a href="https://paperswithcode.com/paper/c2am-contrastive-learning-of-class-agnostic">C2AM: Contrastive Learning of Class-Agnostic Activation Map for Weakly Supervised Object Localization and Semantic Segmentation</a></td>
+        <td><details><summary>Abstract</summary><div>C²AM 是一个创新的架构，通过对比学习生成类无关的激活图。该架构仅使用未标记的图像数据，不涉及图像级别的监督。C²AM 的核心思想源自以下观察：前景物体的语义信息通常不同于其背景；外观相似的前景物体或颜色/纹理相似的背景在特征空间中有相似的表示。基于这些关系，我们构建正负样本对，并通过一种新的对比损失机制迫使网络用类无关的激活图分离前景和背景。由于网络被引导识别跨图像的前景和背景，我们的方法生成的类无关激活图覆盖了更完整的物体区域。我们成功地从 C²AM 提取了用于物体定位的类无关物体边界框，并利用背景线索来优化分类网络生成的 CAM 用于语义分割。在 CUB-200-2011、ImageNet-1K 和 PASCAL VOC2012 数据集上的大量实验表明，WSOL 和 WSSS 都能从 C²AM 中受益。</div></details></td>
+        <td><a href="https://github.com/IzuiZero/CCAM-master-Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>49</td>
+        <td>FIFO</td>
+        <td><a href="https://paperswithcode.com/paper/fifo-learning-fog-invariant-features-for-1">FIFO: Learning Fog-invariant Features for Foggy Scene Segmentation</a></td>
+        <td><details><summary>Abstract</summary><div>FogNet 是一种针对雾霾条件的鲁棒语义分割模型，大大提高了在雾霾条件下的分割性能而不牺牲晴朗天气下的准确性。首先，它将雾霾条件视为图像的风格，并将不同雾霾条件的图像在神经风格空间中进行对齐，从而实现风格间的有效匹配。其次，它引入了雾霾通滤波模块，该模块显式提取与雾霾相关的特征进行对齐，这进一步加快了模型的收敛速度并提高了分割精度。</div></details></td>
+        <td><a href="https://github.com/IzuiZero/fifo-main-Paddle">快速开始</a></td>
+    </tr>
+</table>
+
+### 多模态
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>DSCMR</td>
+        <td><a href="https://paperswithcode.com/paper/deep-supervised-cross-modal-retrieval">Deep Supervised Cross-modal Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>结合应用线性分类器对公共表示空间中的样本进行分类和具有两个具有权重共享约束的子网的新型网络的方法有效学习到不同模态数据之间的公共的表达</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main/DSCMR#tdsub">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>NDSCMR</td>
+        <td><a href="https://paperswithcode.com/paper/deep-supervised-cross-modal-retrieval">Deep Supervised Cross-modal Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>针对现有方法双通道处理多模态数据减少多种模态间的两个特征属于同一个类别的概率损失计算，以降低两个特征属于同一个类别的概率。</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main/NDSCMR#tdsub">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>GCR</td>
+        <td><a href="https://github.com/BMC-SDNU/Cross-Modal-Retrieval/tree/main/Supervised-cross-modal-real-valued/GCR">Exploring Graph-Structured Semantics for Cross-Modal Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>利用图潜空间中最大限度地探索标注数据的结构，并将其作为语义约束来进行语义匹配，以全面探索跨模态检索的模态内和模态间信息</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main/GCR#tdsub">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>GDLCR</td>
+        <td><a href="https://github.com/BMC-SDNU/Cross-Modal-Retrieval/tree/main/Supervised-cross-modal-real-valued/GCR">Exploring Graph-Structured Semantics for Cross-Modal Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于 GAN 的双重学习（GDL）网络，并结合利用文本投影器来限制图像投影器的训练，来实现多模态数据之间的检索任务。</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main/GDLCR#tdsub">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>DeepCCA</td>
+        <td><a href="https://github.com/VahidooX/DeepCCA">Deep Canonical Correlation Analysis</a></td>
+        <td><details><summary>Abstract</summary><div>一种学习两个数据视图的复杂非线性变换的方法，其结果是数据表示高度线性相关。两种变换的参数被共同学习，以最大化（正则化）总相关性。</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main/DeepCCA#tdsub">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>DCPH</td>
+        <td><a href="https://github.com/JWJ990626/DFPH">Deep Cross-modal Proxy Hashing</a></td>
+        <td><details><summary>Abstract</summary><div>一种新颖的深度跨模态代理哈希算法，称为 DCPH。具体来说，DCPH 首先学习一个代理散列网络，为每个类别生成一个区分性代理散列码。</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>DCNPH</td>
+        <td><a href="https://github.com/JWJ990626/DFPH">Deep Cross-modal Proxy Hashing</a></td>
+        <td><details><summary>Abstract</summary><div>一种利用学习到的代理哈希码作为监督信息的方法，提出了一种新的类似于 Margin-SoftMax 的损耗，而无需定义数据点之间至少有一个相似度。</div></details></td>
+        <td><a href="https://github.com/1034829217/paddle/tree/main">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>MCAN-small</td>
+        <td><a href="https://paperswithcode.com/paper/deep-modular-co-attention-networks-for-visual-1">Deep Modular Co-Attention Networks for Visual Question Answering</a></td>
+        <td><details><summary>Abstract</summary><div>提出了一种深度模块化共注意网络（MCAN），通过级联模块化共注意（MCA）层来模拟问题和图像的自注意力和引导注意力，实现了在视觉问答（VQA）领域的显著性能提升。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/mcan">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>MCAN-large</td>
+        <td><a href="https://paperswithcode.com/paper/deep-modular-co-attention-networks-for-visual-1">Deep Modular Co-Attention Networks for Visual Question Answering</a></td>
+        <td><details><summary>Abstract</summary><div>在原来模型的基础上，将隐藏层数目增大一倍，变为1024，并且在测试开发分割上表现略优，特别是在"Yes/No"和"Other"类问题上，其综合准确率达到了70.93%。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/mcan">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>BAN-4</td>
+        <td><a href="https://paperswithcode.com/paper/bilinear-attention-networks">Bilinear Attention Networks</a></td>
+        <td><details><summary>Abstract</summary><div>BAN_4是双线性注意力网络（BAN）的一个变体，它利用四个注意力图来有效地整合视觉和语言信息，通过考虑两组输入通道间的双线性交互和低秩双线性池化来提取每对通道的联合表示。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/BAN">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>BAN-8</td>
+        <td><a href="https://paperswithcode.com/paper/bilinear-attention-networks">Bilinear Attention Networks</a></td>
+        <td><details><summary>Abstract</summary><div>BAN_8采用八个注意力图来进一步优化多模态输入的交互处理，通过提出的多模态残差网络变体来更高效地利用这些注意力图，从而在视觉问答和Flickr30k Entities等数据集上实现更高的性能表现。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/BAN">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>MFB</td>
+        <td><a href="https://paperswithcode.com/paper/multi-modal-factorized-bilinear-pooling-with">Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question  Answering</a></td>
+        <td><details><summary>Abstract</summary><div>提出了一种结合多模态因子化双线性（MFB）池化和共注意力机制的新型网络架构，有效地融合视觉和文本特征，为视觉问答任务提供了一个统一的模型。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/MFB">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>MFH</td>
+        <td><a href="https://paperswithcode.com/paper/beyond-bilinear-generalized-multi-modal">Beyond Bilinear: Generalized Multimodal Factorized High-order Pooling for Visual  Question Answering</a></td>
+        <td><details><summary>Abstract</summary><div>提出了一种综合使用共注意力机制、多模态因子化高阶池化（MFH）和KL散度损失函数的深度神经网络架构，有效地整合了图像和问题的精细特征表达、多模态特征融合和自动答案预测，从而在视觉问答任务上达到了最新的最佳性能。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/MFH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>MMNasNet</td>
+        <td><a href="https://paperswithcode.com/paper/deep-multimodal-neural-architecture-search">Deep Multimodal Neural Architecture Search</a></td>
+        <td><details><summary>Abstract</summary><div>提出了一个通用的深度多模态神经架构搜索（MMnas）框架，通过定义一系列基础操作并构建一个统一的编解码器骨干网络，结合梯度导向的NAS算法，高效地学习最优架构，显著提升了包括视觉问答、图像-文本匹配和视觉定位在内的多种多模态学习任务的性能。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/MMNasNet">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>TRAR_VQA</td>
+        <td><a href="https://paperswithcode.com/paper/trar-routing-the-attention-spans-in">TRAR: Routing the Attention Spans in Transformerfor Visual Question Answering</a></td>
+        <td><details><summary>Abstract</summary><div>提出了一种称为Transformer路由（TRAR）的样本依赖路由方案来解决Transformer中全局和局部依赖性建模问题。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/TRAR">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>TRAR_CLEVR</td>
+        <td><a href="https://paperswithcode.com/paper/trar-routing-the-attention-spans-in">TRAR: Routing the Attention Spans in Transformerfor Visual Question Answering</a></td>
+        <td><details><summary>Abstract</summary><div>提出TRAR来解决视觉推理任务，为每个视觉Transformer层都配备了一个具有不同注意力跨度的路由模块。该模型可以基于前一推理步骤的输出动态选择相应的注意力，从而为每个样本制定最佳路由路径，效果比传统的Transformer模型更加优越。</div></details></td>
+        <td><a href="https://github.com/GSHLiberty/PaddlePaddle_project/tree/main/TRAR">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>BSTH</td>
+        <td><a href="https://github.com/FutureTwT/BSTH">Bit-aware Semantic Transformer Hashing for Multi-modal Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>通过自注意力机制挖掘逐位语义概念，同时在概念级别上对异构模态进行对齐，解决了传统方法的语义表达能力、特征级多模态融合和语义相关性三个问题</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/BSTH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>GCIMH</td>
+        <td><a href="https://github.com/yfchen6/GCIMH">Graph Convolutional Incomplete Multi-modal Hashing</a></td>
+        <td><details><summary>Abstract</summary><div>利用图卷积自编码器和多模态、标签网络，处理多模态数据缺失模态问题，通过师生学习传递知识，实现离线训练和在线查询的有效多模态哈希编码。</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/GCIMH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>NCH</td>
+        <td><a href="https://github.com/FutureTwT/NCH">Partial Multi-Modal Hashing via Neighbor-Aware Completion Learning</a></td>
+        <td><details><summary>Abstract</summary><div>结合了跨模态补全学习和多模态哈希学习，支持不完整数据训练和查询，引入邻居感知补全学习模块。</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/NCH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>KNNCH</td>
+        <td><a href="https://github.com/FutureTwT/NCH">Partial Multi-Modal Hashing via Neighbor-Aware Completion Learning</a></td>
+        <td><details><summary>Abstract</summary><div>利用k近邻算法找出同缺失实例最近的k个锚点，并基于平均化思想直接补全缺失数据</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/KNNCH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>DADH</td>
+        <td><a href="https://github.com/Zjut-MultimediaPlus/DADH">Deep Adversarial Discrete Hashing for Cross-Modal Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>采用对抗训练实现跨模态特征学习，确保特征分布一致性。引入加权余弦三元组约束利用多标签语义知识，采用离散哈希策略最小化量化损失，保留标签中的语义知识。</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/DADH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>DAPH</td>
+        <td><a href="https://github.com/rongchengtu1/DAPH">Data-Aware Proxy Hashing for Cross-modal Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>通过训练数据感知代理网络生成基于类别、图像、文本的哈希码，引入新型哈希损失，有效监督模态特定哈希网络，确保语义信息得以充分保留。</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/DAPH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td>DJSRH</td>
+        <td><a href="https://paperswithcode.com/paper/deep-joint-semantics-reconstructing-hashing">Deep joint-semantics reconstructing hashing for large-scale unsupervised  cross-modal retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>一种无监督深度跨模态哈希编码方法，通过构建联合语义相似性矩阵和重建框架，学习保留原始数据邻域结构的二进制码，最大程度地重建联合语义关系。</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/DJSRH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td>DSAH</td>
+        <td><a href="https://github.com/idejie/DSAH">Deep semantic-alignment hashing for unsupervised cross-modal retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>一种无监督跨模态检索的深度哈希方法，通过充分利用图像-文本对的共现信息，设计语义对齐损失函数，并创新性地提出模态间的特征重构。</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/DSAH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>PSLDH</td>
+        <td><a href="https://github.com/rongchengtu1/PSLDH">Partial-Softmax Loss based Deep Hashing</a></td>
+        <td><details><summary>Abstract</summary><div>通过训练分类哈希网络生成每个类别的区分性哈希码，直接用于图像哈希网络的学习过程。</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/PSLDH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td>WGLHH</td>
+        <td><a href="https://github.com/rongchengtu1/WGLHH">Weighted Gaussian Loss based Hamming Hashing</a></td>
+        <td><details><summary>Abstract</summary><div>通过引入加权高斯损失优化哈希模型，显著惩罚汉明球内不相似的数据对，生成更紧凑的哈希码。</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/WGLHH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td>DCMH</td>
+        <td><a href="https://github.com/WendellGul/DCMH">Deep Cross-Modal Hashing</a></td>
+        <td><details><summary>Abstract</summary><div>将特征学习和哈希码学习集成到同一个端到端的深度学习框架中，实现高效的跨模态哈希检索</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/DCMH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td>JDSH</td>
+        <td><a href="https://github.com/KaiserLew/JDSH">Joint-modal Distribution-based Similarity Hashing for Large-scale Unsupervised Deep Cross-modal Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>通过构建联合模态相似性矩阵来融合跨模态相似性信息，并提出了基于分布的相似性决策和加权方法来改进无监督跨模态哈希的采样和加权方案，以生成更具区分性的哈希码</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/JDSH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td>AGAH</td>
+        <td><a href="https://github.com/WendellGul/AGAH">Adversary Guided Asymmetric Hashing for Cross-Modal Retrieval</a></td>
+        <td><details><summary>Abstract</summary><div>通过对抗学习指导的多标签注意力模块增强特征学习，同时采用不对称哈希方法生成高质量的二进制码，有效提高了跨模态检索的性能。</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/AGAH">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>SCH</td>
+        <td><a href="https://github.com/hutt94/SCH">Cross-Modal Hashing Method with Properties of Hamming Space: A New Perspective</a></td>
+        <td><details><summary>Abstract</summary><div>通过将样本对分类并根据其相似性施加不同的约束，来有效地利用汉明空间并缓解损失函数振荡问题。</div></details></td>
+        <td><a href="https://github.com/LiuJinyu1229/paddle/tree/main/SCH">快速开始</a></td>
+    </tr>
+</table>
+
+### 智能语音
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Fastspeech2-LibriTTS</td>
+        <td><a href="https://paperswithcode.com/paper/fastspeech-2-fast-and-high-quality-end-to-end">FastSpeech 2: Fast and High-Quality End-to-End Text to Speech</a></td>
+        <td><details><summary>Abstract</summary><div>在LibriTTS数据集上训练的fastspeech2模型，实现了直接从文本并行生成语音波形。在MOS指标上达到了3.83</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/fastspeech2_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>glow-tts</td>
+        <td><a href="https://paperswithcode.com/paper/glow-tts-a-generative-flow-for-text-to-speech">Glow-TTS: A Generative Flow for Text-to-Speech via Monotonic Alignment Search</a></td>
+        <td><details><summary>Abstract</summary><div>基于流式模型，在提高速度的基础上保证了合成语音的质量。在MOS指标上达到了3.97</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/glow-tts_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>VITS</td>
+        <td><a href="https://cs.paperswithcode.com/paper/conditional-variational-autoencoder-with">VITS: Conditional Variational Autoencoder with Adversarial Learning for  End-to-End  Text-to-Speech</a></td>
+        <td><details><summary>Abstract</summary><div>结合变分推理、规范化流程和对抗性训练，生成生动自然的语音。在MOS指标上达到了4.43</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/vits_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>AutoVC</td>
+        <td><a href="https://paperswithcode.com/paper/zero-shot-voice-style-transfer-with-only">AUTOVC: Zero-Shot Voice Style Transfer with Only Autoencoder Loss</a></td>
+        <td><details><summary>Abstract</summary><div>不依赖于复杂的GAN或CVAE，使用精心设计瓶颈的自编码器来实现分布匹配的风格转换。在MOS指标上达到了3.56</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/autovc_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>AdainVC</td>
+        <td><a href="https://paperswithcode.com/paper/one-shot-voice-conversion-by-separating">One-shot Voice Conversion by Separating Speaker and Content Representations with  Instance  Normalization</a></td>
+        <td><details><summary>Abstract</summary><div>不依赖于成对训练数据的语音转换模型，拓展了语音转换的应用场景。在风格相似度上达到了80%</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/adainvc_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>AssemVC</td>
+        <td><a href="https://paperswithcode.com/paper/assem-vc-realistic-voice-conversion-by">Assem-VC: Realistic Voice Conversion by Assembling Modern Speech Synthesis Techniques</a></td>
+        <td><details><summary>Abstract</summary><div>通过分解和重新组装非并行VC系统的不同部分，创建了一个新的任意到多个的语音转换系统。在MOS指标上达到了3.91</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/assem-vc_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Cotatron</td>
+        <td><a href="https://paperswithcode.com/paper/cotatron-transcription-guided-speech-encoder">Cotatron: Transcription-Guided Speech Encoder for Any-to-Many Voice Conversion  without  Parallel Data</a></td>
+        <td><details><summary>Abstract</summary><div>提供一个说话者独立的语言表示，将多说话人TTS的数据集应用于语音转换模型中。在MOS指标上达到了3.75</div></details></td>
+        <td><a href="https://github.com/zyhsuperman/paddlepaddle/tree/main/cotatron_paddle">快速开始</a></td>
+    </tr>
+</table>
+
+
+
+
+
+
+## 西电贡献社区开源模型
+
+
+### 图像分类
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>SMT-T</td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>SMT-S</td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>SMT-B</td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>SMT-L_224_1K</td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>SMT-L_384_1K</td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>SMT-L_224_22K</td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>BiFormer-T</td>
+        <td><a href="https://paperswithcode.com/paper/biformer-vision-transformer-with-bi-level">BiFormer: Vision Transformer with Bi-Level Routing Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。通过设计一种自适应的分区注意力方式，使token不会关注到低相关度的token，从而提高计算效率。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/BiFormer_PADDLE　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>BiFormer-S</td>
+        <td><a href="https://paperswithcode.com/paper/biformer-vision-transformer-with-bi-level">BiFormer: Vision Transformer with Bi-Level Routing Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。通过设计一种自适应的分区注意力方式，使token不会关注到低相关度的token，从而提高计算效率。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/BiFormer_PADDLE　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>BiFormer-B</td>
+        <td><a href="https://paperswithcode.com/paper/biformer-vision-transformer-with-bi-level">BiFormer: Vision Transformer with Bi-Level Routing Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。通过设计一种自适应的分区注意力方式，使token不会关注到低相关度的token，从而提高计算效率。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/BiFormer_PADDLE　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>FLatten-PVT-T</td>
+        <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>FLatten-PVTv2-B0</td>
+        <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>FLatten-Swin-T</td>
+        <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>FLatten-Swin-S</td>
+        <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>FLatten-Swin-B-224</td>
+        <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>FLatten-Swin-B-384</td>
+        <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision- transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>FLatten-CSwin-T</td>
+        <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>FSRCNN_X4</td>
+        <td><a href="https://paperswithcode.com/paper/accelerating-the-super-resolution">Accelerating the Super-Resolution Convolutional Neural Network</a></td>
+        <td><details><summary>Abstract</summary><div>FSRCNN是一种基于超分辨率重建的神经网络。旨在将低分辨率图像提升到高分辨率图像。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/FSRCNN_X2-X3-X4_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>SRResNet</td>
+        <td><a href="https://paperswithcode.com/paper/photo-realistic-single-image-super-resolution">Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network</a></td>
+        <td><details><summary>Abstract</summary><div>FSRCNN是一种基于超分辨率重建的神经网络。旨在将低分辨率图像提升到高分辨率图像。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/CARN-SRResNet-_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>CARN</td>
+        <td><a href="https://paperswithcode.com/paper/fast-accurate-and-lightweight-super-1">Fast, Accurate, and Lightweight Super-Resolution with Cascading Residual Network</a></td>
+        <td><details><summary>Abstract</summary><div>CARN是一种基于上下文聚合和细化的神经网络。它是一种用于图像超分辨率的深度学习模型，旨在将低分辨率图像提升到高分辨率图像。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/CARN-SRResNet-_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>SRCNN</td>
+        <td><a href="https://paperswithcode.com/paper/image-super-resolution-using-deep">Image Super-Resolution Using Deep Convolutional Networks</a></td>
+        <td><details><summary>Abstract</summary><div>SRCNN是一种基于卷积神经网络的超分辨率重建方法。它是一种用于将低分辨率图像提升至高分辨率的深度学习模型。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SRCNN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>SRDenseNet</td>
+        <td><a href="https://paperswithcode.com/paper/image-super-resolution-using-dense-skip">Image Super-Resolution Using Dense Skip Connections</a></td>
+        <td><details><summary>Abstract</summary><div>SRDenseNet是一种基于稠密连接的超分辨率重建神经网络。是一种用于将低分辨率图像提升至高分辨率的深度学习模型。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SRDenseNet_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>WDSR-A</td>
+        <td><a href="https://paperswithcode.com/paper/wide-activation-for-efficient-and-accurate">Wide Activation for Efficient and Accurate Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>WDSR-A基于残差网络的架构，是一种用于图像超分辨率的深度学习模型。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/WDSR_A_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td>RDN</td>
+        <td><a href="https://paperswithcode.com/paper/residual-dense-network-for-image-super">Residual Dense Network for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>RDN基于残差网络的架构，是一种用于图像超分辨率的深度学习模型。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/RDN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td>DRRN</td>
+        <td><a href="https://paperswithcode.com/paper/image-super-resolution-via-deep-recursive">Image Super-Resolution via Deep Recursive Residual Network</a></td>
+        <td><details><summary>Abstract</summary><div>DRRN是一种用于图像超分辨率重建的深度学习模型。它结合了密集连接和残差学习的思想，提高超分辨率重建的性能和效果。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DRRN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>ESPCN</td>
+        <td><a href="https://paperswithcode.com/paper/real-time-single-image-and-video-super">Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel  Convolutional  Neural Network</a></td>
+        <td><details><summary>Abstract</summary><div>ESPCN使用子像素卷积（Sub-Pixel Convolution）来实现超分辨率重建</div></details></td>
+        <td><a href="https://github.com/XDpaddle/ESPCN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td>RRDBNet</td>
+        <td><a href="https://paperswithcode.com/paper/esrgan-enhanced-super-resolution-generative">ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks</a></td>
+        <td><details><summary>Abstract</summary><div>RRDBNet是一种基于残差网络和密集连接的深度学习模型，用于图像超分辨率重建。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/EDSR-and-RRDBnet">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td>EDSR</td>
+        <td><a href="https://paperswithcode.com/paper/enhanced-deep-residual-networks-for-single">Enhanced Deep Residual Networks for Single Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>EDSR是一种基于残差学习和跳跃连接的深度学习模型，通过堆叠残差块和跳跃连接，提高了网络的表达能力和图像恢复的细节性能，用于图像超分辨率重建。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/EDSR-and-RRDBnet">快速开始</a></td>
+    </tr>
+</table>
+
+### 目标检测
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>HybridNets-D0</td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">HybridNets: End-to-End Perception Network　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>HybridNets-D1</td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">HybridNets: End-to-End Perception Network　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>HybridNets-D2</td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">HybridNets: End-to-End Perception Network　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>HybridNets-D3</td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">HybridNets: End-to-End Perception Network　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D3_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>HybridNets-D4</td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">　HybridNets: End-to-End Perception Network</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>HybridNets-D5</td>
+        <td><a href="　https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1">　HybridNets: End-to-End Perception Network</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>HybridNets-D6</td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">HybridNets: End-to-End Perception Network　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>SiamNCA</td>
+        <td><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705122008437">Visual object tracking via non-local correlation attention learning</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于孪生网络的单目标跟踪网络，通过引入非局部注意力机制实现长距离依赖建立，从而实现更优的性能。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SiamNCA">快速开始</a></td>
+    </tr>
+</table>
+
+### 图像超分
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>LESRCNN_x2</td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-2　">　Lightweight image super-resolution with enhanced CNN</a></td>
+        <td><details><summary>Abstract</summary><div>这是一种轻量级的超分辨率卷积神经网络，它通过增强的CNN结构实现高效的图像分辨率提升，特别适用于需要快速处理的应用。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/lesrcnn　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>LESRCNN_x3</td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-2　">　Lightweight image super-resolution with enhanced CNN</a></td>
+        <td><details><summary>Abstract</summary><div>这是一种轻量级的超分辨率卷积神经网络，它通过增强的CNN结构实现高效的图像分辨率提升，特别适用于需要快速处理的应用。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/lesrcnn　　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>LESRCNN_x4</td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-2　">Lightweight image super-resolution with enhanced CNN　</a></td>
+        <td><details><summary>Abstract</summary><div>这是一种轻量级的超分辨率卷积神经网络，它通过增强的CNN结构实现高效的图像分辨率提升，特别适用于需要快速处理的应用。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/lesrcnn　　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>CFSRCNN_x2</td>
+        <td><a href="https://github.com/hellloxiaotian/CFSRCNN">Coarse-to-Fine CNN for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>该网络采用粗到细的方法进行图像超分辨率，先大致恢复图像结构，然后逐步细化细节和纹理，有效提高了图像的清晰度和细节。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/cfsrcnn_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>CFSRCNN_x3</td>
+        <td><a href="https://github.com/hellloxiaotian/CFSRCNN.">Coarse-to-Fine CNN for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>该网络采用粗到细的方法进行图像超分辨率，先大致恢复图像结构，然后逐步细化细节和纹理，有效提高了图像的清晰度和细节。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/cfsrcnn_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>CFSRCNN_x4</td>
+        <td><a href="https://github.com/hellloxiaotian/CFSRCNN.">Coarse-to-Fine CNN for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>该网络采用粗到细的方法进行图像超分辨率，先大致恢复图像结构，然后逐步细化细节和纹理，有效提高了图像的清晰度和细节。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/cfsrcnn_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>ACNet_x2</td>
+        <td><a href="https://paperswithcode.com/paper/asymmetric-cnn-for-image-super-resolution">Asymmetric CNN for image super-resolution</a></td>
+        <td><details><summary>Abstract</summary><div>这个模型通过不对称的卷积神经网络结构来提高超分辨率的性能，使得网络可以更有效地处理和重建高分辨率图像的细节。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/ACNet_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>ACNet_x3</td>
+        <td><a href="https://paperswithcode.com/paper/asymmetric-cnn-for-image-super-resolution">Asymmetric CNN for image super-resolution</a></td>
+        <td><details><summary>Abstract</summary><div>这个模型通过不对称的卷积神经网络结构来提高超分辨率的性能，使得网络可以更有效地处理和重建高分辨率图像的细节。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/ACNet_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>ACNet_x4</td>
+        <td><a href="https://paperswithcode.com/paper/asymmetric-cnn-for-image-super-resolution">Asymmetric CNN for image super-resolution</a></td>
+        <td><details><summary>Abstract</summary><div>这个模型通过不对称的卷积神经网络结构来提高超分辨率的性能，使得网络可以更有效地处理和重建高分辨率图像的细节。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/ACNet_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>DSRNet_x2</td>
+        <td><a href="https://paperswithcode.com/paper/image-super-resolution-via-dynamic-network">Image super-resolution via dynamic network</a></td>
+        <td><details><summary>Abstract</summary><div>该网络通过动态调整其结构来适应不同的超分辨率任务，能够根据图像的特定特征和需求灵活调整其处理流程。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DSRNet_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>DSRNet_x3</td>
+        <td><a href="https://paperswithcode.com/paper/image-super-resolution-via-dynamic-network">Image super-resolution via dynamic network</a></td>
+        <td><details><summary>Abstract</summary><div>该网络通过动态调整其结构来适应不同的超分辨率任务，能够根据图像的特定特征和需求灵活调整其处理流程。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DSRNet_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>DSRNet_x4</td>
+        <td><a href="https://paperswithcode.com/paper/image-super-resolution-via-dynamic-network">Image super-resolution via dynamic network</a></td>
+        <td><details><summary>Abstract</summary><div>该网络通过动态调整其结构来适应不同的超分辨率任务，能够根据图像的特定特征和需求灵活调整其处理流程。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DSRNet_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>hgsrcnn</td>
+        <td><a href="https://paperswithcode.com/paper/a-heterogeneous-group-cnn-for-image-super">A heterogeneous group CNN for image super-resolution</a></td>
+        <td><details><summary>Abstract</summary><div>这个网络使用了异构组卷积结构，它将不同类型的卷积层组合起来，以更全面地捕捉图像的多层次特征，从而有效地提高图像分辨率。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HGSRCNN_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>lsgsrcnn</td>
+        <td><a href="https://paperswithcode.com/paper/a-heterogeneous-group-cnn-for-image-super">A heterogeneous group CNN for image super-resolution</a></td>
+        <td><details><summary>Abstract</summary><div>这个网络使用了异构组卷积结构，它将不同类型的卷积层组合起来，以更全面地捕捉图像的多层次特征，从而有效地提高图像分辨率。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HGSRCNN_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>MSRN_X2</td>
+        <td><a href="https://paperswithcode.com/paper/residual-dense-network-for-image-restoration">Multi-scale Residual Network for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>MSRN是一种基于多尺度特征融合的深度学习模型，用于图像超分辨率重建。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/MSRN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>MSRN_X3</td>
+        <td><a href="https://paperswithcode.com/paper/residual-dense-network-for-image-restoration">Multi-scale Residual Network for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>MSRN是一种基于多尺度特征融合的深度学习模型，用于图像超分辨率重建。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/MSRN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>MSRN_X4</td>
+        <td><a href="https://paperswithcode.com/paper/residual-dense-network-for-image-restoration">Multi-scale Residual Network for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>MSRN是一种基于多尺度特征融合的深度学习模型，用于图像超分辨率重建。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/MSRN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>SRRFN_X2</td>
+        <td><a href="http://openaccess.thecvf.com/content_ICCVW_2019/html/LCI/Li_Lightweight_and_Accurate_Recursive_Fractal_Network_for_Image_Super-Resolution_ICCVW_2019_paper.html">Lightweight and Accurate Recursive Fractal Network for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>SRRFN使用一个轻量级且精确的SR框架，称为超分辨率递归分形网络（SRRFN）。引入了一个灵活多样的分形模块，还引入了递归学习机制，以最大限度地利用模型参数。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SRRFN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>SRRFN_X3</td>
+        <td><a href="http://openaccess.thecvf.com/content_ICCVW_2019/html/LCI/Li_Lightweight_and_Accurate_Recursive_Fractal_Network_for_Image_Super-Resolution_ICCVW_2019_paper.html">Lightweight and Accurate Recursive Fractal Network for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>SRRFN使用一个轻量级且精确的SR框架，称为超分辨率递归分形网络（SRRFN）。引入了一个灵活多样的分形模块，还引入了递归学习机制，以最大限度地利用模型参数。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SRRFN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>SRRFN_X4</td>
+        <td><a href="http://openaccess.thecvf.com/content_ICCVW_2019/html/LCI/Li_Lightweight_and_Accurate_Recursive_Fractal_Network_for_Image_Super-Resolution_ICCVW_2019_paper.html">Lightweight and Accurate Recursive Fractal Network for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>SRRFN使用一个轻量级且精确的SR框架，称为超分辨率递归分形网络（SRRFN）。引入了一个灵活多样的分形模块，还引入了递归学习机制，以最大限度地利用模型参数。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SRRFN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>MDCN</td>
+        <td><a href="https://paperswithcode.com/paper/mdcn-multi-scale-dense-cross-network-for">MDCN: Multi-scale Dense Cross Network for Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>MDCN提出了一种多尺度密集交叉网络（MDCN），由多尺度密集交叉块（MDCB）、分层特征蒸馏块（HFDB）和动态重建块（DRB）组成。它以更少的参数和更少的执行时间实现了图像超分出色的性能。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/MDCN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>VDSR</td>
+        <td><a href="https://paperswithcode.com/paper/accurate-image-super-resolution-using-very">Accurate Image Super-Resolution Using Very Deep Convolutional Networks</a></td>
+        <td><details><summary>Abstract</summary><div>一种非常深的残差连接超分网络，在WebFace-8x上取得23.65的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/VDSR_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td>SRLUT_S</td>
+        <td><a href="https://paperswithcode.com/paper/practical-single-image-super-resolution-using">Practical Single-Image Super-Resolution Using Look-Up Table</a></td>
+        <td><details><summary>Abstract</summary><div>一种用查找表算法代替超分网络的超分算法，在Set5数据集达到29.82的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SRLUT_S_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td>SRLUT_V</td>
+        <td><a href="https://paperswithcode.com/paper/practical-single-image-super-resolution-using">Practical Single-Image Super-Resolution Using Look-Up Table</a></td>
+        <td><details><summary>Abstract</summary><div>一种用查找表算法代替超分网络的超分算法，在Set5数据集达到29.82的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SRLUT_V_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>SRLUT_F</td>
+        <td><a href="https://paperswithcode.com/paper/practical-single-image-super-resolution-using">Practical Single-Image Super-Resolution Using Look-Up Table</a></td>
+        <td><details><summary>Abstract</summary><div>一种用查找表算法代替超分网络的超分算法，在Set5数据集达到29.82的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SRLUT_F_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td>IMDN_RTC_X2</td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-1">Lightweight Image Super-Resolution with Information Multi-distillation Network</a></td>
+        <td><details><summary>Abstract</summary><div>一种轻量化多重信息蒸馏的超分网络，在Set5 2x数据集上达到38.00的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/IMDN_RTC_X2_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td>IMDN_RTC_X3</td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-1">Lightweight Image Super-Resolution with Information Multi-distillation Network</a></td>
+        <td><details><summary>Abstract</summary><div>一种轻量化多重信息蒸馏的超分网络，在Set5 2x数据集上达到38.00的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/IMDN_RTC_X3_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td>IMDN_RTC_X4</td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-1">Lightweight Image Super-Resolution with Information Multi-distillation Network</a></td>
+        <td><details><summary>Abstract</summary><div>一种轻量化多重信息蒸馏的超分网络，在Set5 2x数据集上达到38.00的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/IMDN_RTC_X4_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td>IMDN_X2</td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-1">Lightweight Image Super-Resolution with Information Multi-distillation Network</a></td>
+        <td><details><summary>Abstract</summary><div>一种轻量化多重信息蒸馏的超分网络，在Set5 2x数据集上达到38.00的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/IMDN_X2_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>IMDN_X3</td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-1">Lightweight Image Super-Resolution with Information Multi-distillation Network</a></td>
+        <td><details><summary>Abstract</summary><div>一种轻量化多重信息蒸馏的超分网络，在Set5 2x数据集上达到38.00的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/IMDN_X3_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td>IMDN_X4</td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-1">Lightweight Image Super-Resolution with Information Multi-distillation Network</a></td>
+        <td><details><summary>Abstract</summary><div>一种轻量化多重信息蒸馏的超分网络，在Set5 2x数据集上达到38.00的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/IMDN_X4_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>32</td>
+        <td>SPLUT-S</td>
+        <td><a href="https://paperswithcode.com/paper/learning-series-parallel-lookup-tables-for">Learning Series-Parallel Lookup Tables for Efficient Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种通过堆叠多个查找表来扩大感受野的超分算法，在Set5上达到30.52的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SPLUT_S">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>33</td>
+        <td>SPLUT-M</td>
+        <td><a href="https://paperswithcode.com/paper/learning-series-parallel-lookup-tables-for">Learning Series-Parallel Lookup Tables for Efficient Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种通过堆叠多个查找表来扩大感受野的超分算法，在Set5上达到30.52的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SPLUT_M">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>34</td>
+        <td>SPLUT-L</td>
+        <td><a href="https://paperswithcode.com/paper/learning-series-parallel-lookup-tables-for">Learning Series-Parallel Lookup Tables for Efficient Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种通过堆叠多个查找表来扩大感受野的超分算法，在Set5上达到30.52的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SPLUT_L">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>35</td>
+        <td>DRLN_x2</td>
+        <td><a href="https://paperswithcode.com/paper/densely-residual-laplacian-super-resolution">Densely Residual Laplacian Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种密集残差连接的拉普拉斯网络，在Set5上达到38.34的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DRLN_X2">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>36</td>
+        <td>DRLN_x3</td>
+        <td><a href="https://paperswithcode.com/paper/densely-residual-laplacian-super-resolution">Densely Residual Laplacian Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种密集残差连接的拉普拉斯网络，在Set5上达到38.34的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DRLN_X3">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>37</td>
+        <td>DRLN_x4</td>
+        <td><a href="https://paperswithcode.com/paper/densely-residual-laplacian-super-resolution">Densely Residual Laplacian Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种密集残差连接的拉普拉斯网络，在Set5上达到38.34的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DRLN_X4">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>38</td>
+        <td>DBPN_x2</td>
+        <td><a href="https://paperswithcode.com/paper/deep-back-projection-networks-for-super">Deep Back-Projection Networks For Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种深度反向投影超分网络，在Set5上达到31.99的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DBPN_X2">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>39</td>
+        <td>DBPN_x4</td>
+        <td><a href="https://paperswithcode.com/paper/deep-back-projection-networks-for-super">Deep Back-Projection Networks For Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种深度反向投影超分网络，在Set5上达到31.99的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DBPN_X4">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td>DBPN_x8</td>
+        <td><a href="https://paperswithcode.com/paper/deep-back-projection-networks-for-super">Deep Back-Projection Networks For Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种深度反向投影超分网络，在Set5上达到31.99的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DBPN_X8">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>41</td>
+        <td>PPON_x4</td>
+        <td><a href="https://paperswithcode.com/paper/progressive-perception-oriented-network-for">Progressive Perception-Oriented Network for Single Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种面向渐进感知的单图像超分辨率网络，在Set5上取得31.68的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/PPON_X4">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>42</td>
+        <td>PPON_x3</td>
+        <td><a href="https://paperswithcode.com/paper/progressive-perception-oriented-network-for">Progressive Perception-Oriented Network for Single Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种面向渐进感知的单图像超分辨率网络，在Set5上取得31.68的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/PPON_X3">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>43</td>
+        <td>PPON_x2</td>
+        <td><a href="https://paperswithcode.com/paper/progressive-perception-oriented-network-for">Progressive Perception-Oriented Network for Single Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种面向渐进感知的单图像超分辨率网络，在Set5上取得31.68的PSNR</div></details></td>
+        <td><a href="https://github.com/XDpaddle/PPON_X2">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>44</td>
+        <td>HDSRNet</td>
+        <td><a href="https://paperswithcode.com/paper/a-heterogeneous-dynamic-convolutional-neural">A Heterogeneous Dynamic Convolutional Neural Network for Image Super-resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种用于图像超分辨率的异构动态卷积网络,由异构并行网络实现。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HDSRNet_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>45</td>
+        <td>IRN</td>
+        <td><a href="https://paperswithcode.com/paper/invertible-image-rescaling">Progressive Perception-Oriented Network for Single Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一个可逆缩放网络 （IRN），以产生视觉上令人愉悦的低分辨率图像，同时在降频过程中使用特定分布后的潜在变量捕获丢失信息的分布</div></details></td>
+        <td><a href="https://github.com/XDpaddle/IRN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>46</td>
+        <td>VapSR</td>
+        <td><a href="https://paperswithcode.com/paper/efficient-image-super-resolution-using-vast">Progressive Perception-Oriented Network for Single Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一个使用广角感受野注意力的高效图像超分辨率模型，通过改进注意力机制设计了一个高效的SR网络</div></details></td>
+        <td><a href="https://github.com/XDpaddle/VapSR_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>47</td>
+        <td>QGCN</td>
+        <td><a href="https://paperswithcode.com/paper/learning-a-single-model-with-a-wide-range-of">Progressive Perception-Oriented Network for Single Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种单一模型方法，可以去除jpeg压缩产生的伪影，从而提供了高度工具化的图像质量改进</div></details></td>
+        <td><a href="https://github.com/XDpaddle/QGCN_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>48</td>
+        <td>HAN</td>
+        <td><a href="https://paperswithcode.com/paper/single-image-super-resolution-via-a-holistic">Progressive Perception-Oriented Network for Single Image Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一种新的整体注意力网络（HAN），它由层注意力模块（LAM）和通道空间注意力模块（CSAM）组成，以模拟层、通道和位置之间的整体相互依赖性,在单图像超分辨率方法中具有良好的性能。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HAN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>49</td>
+        <td>CSNLN</td>
+        <td><a href="https://paperswithcode.com/paper/image-super-resolution-with-cross-scale-non">Image Super-Resolution with Cross-Scale Non-Local Attention and Exhaustive Self-Exemplars Mining</a></td>
+        <td><details><summary>Abstract</summary><div>一个新的超分网络。提出了第一个跨尺度非局部（CS-NL）注意模块，并将其集成到递归神经网络中。通过将新的CS-NL先验与局部和同尺度非局部先验结合在一个强大的递归融合单元中，可以在单个低分辨率（LR）图像中找到更多的跨尺度特征相关性。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/CSNLN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td>DBPN</td>
+        <td><a href="https://paperswithcode.com/paper/deep-back-projection-networks-for-single">Deep Back-Projection Networks for Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一个新的超分网络，构建了相互连接的上采样和下采样单元，每个单元代表不同类型的低分辨率和高分辨率成分。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DBPN_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>51</td>
+        <td>DBPN-RES-MR64-3</td>
+        <td><a href="https://paperswithcode.com/paper/deep-back-projection-networks-for-single">Deep Back-Projection Networks for Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一个结合了递归处理和残差改进的DBPN改进版本</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DBPN-RES-MR64-3_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>52</td>
+        <td>DBPNLL</td>
+        <td><a href="https://paperswithcode.com/paper/deep-back-projection-networks-for-single">Deep Back-Projection Networks for Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一个有10个上采样块和9个下采样块,更深，更复杂连接方式的DBPN改进版本</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DBPNLL_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>53</td>
+        <td>DBPNS</td>
+        <td><a href="https://paperswithcode.com/paper/deep-back-projection-networks-for-single">Deep Back-Projection Networks for Super-Resolution</a></td>
+        <td><details><summary>Abstract</summary><div>一个只有2层上采样和下采样块，结构更加简单的DBPN改进版本</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DBPNS_paddle">快速开始</a></td>
+    </tr>
+</table>
+
+### 图像去噪
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>RIDNet</td>
+        <td><a href="https://paperswithcode.com/paper/real-image-denoising-with-feature-attention　">　Real Image Denoising with Feature Attention</a></td>
+        <td><details><summary>Abstract</summary><div>一种真实图像去噪网络，使用特征注意机制来更有效地识别并处理噪点。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/RIDNet_Paddle-main　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>DRANet</td>
+        <td><a href="https://paperswithcode.com/paper/dual-residual-attention-network-for-image　">Dual Residual Attention Network for Image Denoising　</a></td>
+        <td><details><summary>Abstract</summary><div>用于图像去噪的网络，通过双重残差和注意力机制来提高去噪效果。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DRANet_Paddle-main">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>NBNet</td>
+        <td><a href="https://paperswithcode.com/paper/nbnet-noise-basis-learning-for-image　">　NBNet: Noise Basis Learning for Image Denoising with Subspace Projection</a></td>
+        <td><details><summary>Abstract</summary><div>一种图像去噪网络，通过学习噪声基础和子空间投影来有效地减少噪声。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/NBNet_Paddle-main">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>N2Net</td>
+        <td><a href="https://paperswithcode.com/paper/neighbor2neighbor-self-supervised-denoising　">Neighbor2Neighbor: Self-Supervised Denoising from Single Noisy Images　</a></td>
+        <td><details><summary>Abstract</summary><div>一种自监督的单幅噪声图像去噪方法，通过学习图像邻域间的关系来降低噪声。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/N2NNet_Paddle-main">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>SRMNet</td>
+        <td><a href="https://paperswithcode.com/paper/selective-residual-m-net-for-real-image　">　Selective Residual M-Net for Real Image Denoising</a></td>
+        <td><details><summary>Abstract</summary><div>专门用于实际图像去噪的网络，采用选择性残差机制来提升处理效果。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/SRMNet_Paddle-main　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>DCANet</td>
+        <td><a href="https://paperswithcode.com/paper/dcanet-dual-convolutional-neural-network-with　">DCANet: Dual Convolutional Neural Network with Attention for Image Blind Denoising　</a></td>
+        <td><details><summary>Abstract</summary><div>一种图像盲去噪网络，使用双重卷积神经网络和注意力机制来提升去噪性能</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DCANet_Paddle-main　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>ADNet</td>
+        <td><a href="https://www.sciencedirect.com/science/article/pii/S0893608019304241">　Attention-guided CNN for image denoising</a></td>
+        <td><details><summary>Abstract</summary><div>一种注意力引导的去噪卷积神经网络，主要包括稀疏块 (SB)、特征增强块 (FEB)、注意力块 (AB) 和重建块 (RB)，用于图像去噪。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/ADNet_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>DudeANet</td>
+        <td><a href="https://paperswithcode.com/paper/designing-and-training-of-a-dual-cnn-for">Designing and Training of A Dual CNN for Image Denoising</a></td>
+        <td><details><summary>Abstract</summary><div>一种用于图像去噪的新型双分支残差注意网络，它兼具宽模型架构和注意力引导特征学习的优点。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/DudeNet_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>ECNDNet</td>
+        <td><a href="https://arxiv.org/abs/1810.11834">　Enhanced CNN for image denoising</a></td>
+        <td><details><summary>Abstract</summary><div>一种增强型卷积神经去噪网络，使用残差学习和批量归一化技术来解决训练困难的问题并加速网络的收敛。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/ECNDNet_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>RDDCNN</td>
+        <td><a href="https://github.com/hellloxiaotian/RDDCNN">A robust deformed convolutional neural network for image denoising</a></td>
+        <td><details><summary>Abstract</summary><div>一种鲁棒变形去噪CNN，包含三个块：可变形块 (DB)、增强块 (EB) 和残差块 (RB)。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/rddcnn_paddle">快速开始</a></td>
+    </tr>
+</table>
+
+### 图像生成
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hyconditm</td>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548129　">　Hybrid Conditional Deep Inverse Tone Mapping.</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于深度学习的SDR-to-HDR解决方案，混合条件深度逆色调映射(HyCondITM)，这是一个端到端的可训练框架，包括在单个统一管道中的全局变换、局部调整和细节细化。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Hyconditm_Paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>CSRNet</td>
+        <td><a href="　https://paperswithcode.com/paper/conditional-sequential-modulation-for-1">Conditional Sequential Modulation for Efficient Global Image Retouching　</a></td>
+        <td><details><summary>Abstract</summary><div>CSRNet由一个基础网络和一个条件网络组成。基本网络的作用类似于独立处理每个像素的MLP，并且条件网络提取输入图像的全局特征以生成条件向量。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/CSRNet_Paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Deep SR-ITM-base</td>
+        <td><a href="　https://paperswithcode.com/paper/deep-sr-itm-joint-learning-of-super">Deep SR-ITM: Joint Learning of Super-Resolution and  Inverse Tone-Mapping for 4K UHD HDR Applications　</a></td>
+        <td><details><summary>Abstract</summary><div>专门为4K超高清（UHD）高动态范围（HDR）应用设计。这个网络结合了超分辨率（SR）和逆色调映射（ITM）的任务，以提高图像质量和动态范围。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Deep-sr-itm-base_Paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>HDRUNet</td>
+        <td><a href="　https://paperswithcode.com/paper/hdrunet-single-image-hdr-reconstruction-with">　HDRUNet: Single Image HDR Reconstruction with Denoising and Dequantization</a></td>
+        <td><details><summary>Abstract</summary><div>一种用于单图像高动态范围重建的网络，同时包含去噪和去量化功能，用于提升图像质量。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HDRUnet_Paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>HDRTVNet-HG</td>
+        <td><a href="https://paperswithcode.com/paper/a-new-journey-from-sdrtv-to-hdrtv　">A New Journey from SDRTV to HDRTV　</a></td>
+        <td><details><summary>Abstract</summary><div>一个旨在从标准动态范围电视转向高动态范围电视的图像处理方法，专注于改善图像的动态范围和细节。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HDRTVNet-HG_Paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>HDRTVNet-AGCM</td>
+        <td><a href="https://paperswithcode.com/paper/a-new-journey-from-sdrtv-to-hdrtv　　">A New Journey from SDRTV to HDRTV　</a></td>
+        <td><details><summary>Abstract</summary><div>一个旨在从标准动态范围电视转向高动态范围电视的图像处理方法，专注于改善图像的动态范围和细节。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HDRTVNet-AGCM_Paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>HDRTVNet-LE</td>
+        <td><a href="https://paperswithcode.com/paper/a-new-journey-from-sdrtv-to-hdrtv　　">A New Journey from SDRTV to HDRTV　</a></td>
+        <td><details><summary>Abstract</summary><div>一个旨在从标准动态范围电视转向高动态范围电视的图像处理方法，专注于改善图像的动态范围和细节。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HDRTVNet-LE_Paddle">快速开始</a></td>
+    </tr>
+</table>
+
+### 单目标跟踪
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>siamrpn_alex_dwxcorr</td>
+        <td><a href="https://paperswithcode.com/paper/high-performance-visual-tracking-with-siamese　">　High Performance Visual Tracking With Siamese Region Proposal Network</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。通过孪生网络结构提取特征，然后利用RPN来评估这些候选区域与目标的相似度。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>siamrpn_alex_dwxcorr_otb</td>
+        <td><a href="　https://paperswithcode.com/paper/high-performance-visual-tracking-with-siamese">High Performance Visual Tracking With Siamese Region Proposal Network　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。通过孪生网络结构提取特征，然后利用RPN来评估这些候选区域与目标的相似度。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>siamrpn_r50_dwxcorr</td>
+        <td><a href="　https://paperswithcode.com/paper/high-performance-visual-tracking-with-siamese">High Performance Visual Tracking With Siamese Region Proposal Network　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。通过孪生网络结构提取特征，然后利用RPN来评估这些候选区域与目标的相似度。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>siamrpn_r50_dwxcorr_lt</td>
+        <td><a href="https://paperswithcode.com/paper/siamrpn-evolution-of-siamese-visual-tracking　">　SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。相比与SiamRPN 模型进行了三个关键改进：增加深度、引入注意力机制和引入区域池化。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>siamrpn_r50_dwxcorr_otb</td>
+        <td><a href="　https://paperswithcode.com/paper/siamrpn-evolution-of-siamese-visual-tracking">SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。相比与SiamRPN 模型进行了三个关键改进：增加深度、引入注意力机制和引入区域池化。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>siamrpn_mobilev2_dwxcorr</td>
+        <td><a href="　https://paperswithcode.com/paper/siamrpn-evolution-of-siamese-visual-tracking">SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks　</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。相比与SiamRPN 模型进行了三个关键改进：增加深度、引入注意力机制和引入区域池化。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle　">快速开始</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>siammask_r50</td>
+        <td><a href="　https://paperswithcode.com/paper/siammask-a-framework-for-fast-online-object">　SiamMask: A Framework for Fast Online Object Tracking and Segmentation</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。SiamMask 基于孪生网络结构，将目标跟踪和分割任务统一在一个框架中，提供实时的目标跟踪和精确的目标分割结果。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle　">快速开始</a></td>
+    </tr>
+</table>
+
+### 图像质量检测
+<table>
+    <tr>
+        <th>序号</th>
+        <th>模型简称</th>
+        <th>论文名称(链接)</th>
+        <th>模型简介</th>
+        <th width='10%'>快速开始</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>NIMA</td>
+        <td><a href="https://paperswithcode.com/paper/nima-neural-image-assessment">NIMA: Neural Image Assessment</a></td>
+        <td><details><summary>Abstract</summary><div>NIMA，即神经图像质量评估模型，是一种基于神经网络的图像质量评估方法。它利用深度学习技术来模拟人类对图像质量的主观评估。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/NIMA_paddle">快速开始</a></td>
+    </tr>
+</table>
+
+
