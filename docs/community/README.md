@@ -23,7 +23,7 @@
     <tr>
         <td>2</td>
         <td><a href="https://arxiv.org/pdf/1603.08511v5.pdf">Colorful Image Colorization</a></td>
-        <td><details><summary>Abstract</summary><div>Given a grayscale photograph as input, this paper attacks the problem of hallucinating a plausible color version of the photograph. This problem is clearly underconstrained, so previous approaches have either relied on significant user interaction or resulted in desaturated colorizations. We propose a fully automatic approach that produces vibrant and realistic colorizations. We embrace the underlying uncertainty of the problem by posing it as a classification task and use class-rebalancing at training time to increase the diversity of colors in the result. The system is implemented as a feed-forward pass in a CNN at test time and is trained on over a million color images. We evaluate our algorithm using a "colorization Turing test," asking human participants to choose between a generated and ground truth color image. Our method successfully fools humans on 32% of the trials, significantly higher than previous methods. Moreover, we show that colorization can be a powerful pretext task for self-supervised feature learning, acting as a cross-channel encoder. This approach results in state-of-the-art performance on several feature learning benchmarks.</div></details></td>
+        <td><details><summary>Abstract</summary><div>Given a grayscale photograph as input, this paper attacks the problem of hallucinating a plausible color version of the photograph. This problem is clearly underconstrained, so previous approaches have either relied on significant user interaction or resulted in desaturated colorizations. We propose a fully automatic approach that produces vibrant and realistic colorizations. We embrace the underlying uncertainty of the problem by posing it as a classification task and use class-rebalancing at training time to increase the diversity of colors in the result. The system is implemented as a feed-forward pass in a CNN at test time and is trained on over a million color images. We evaluate our algorithm using a"colorization Turing test,"asking human participants to choose between a generated and ground truth color image. Our method successfully fools humans on 32% of the trials, significantly higher than previous methods. Moreover, we show that colorization can be a powerful pretext task for self-supervised feature learning, acting as a cross-channel encoder. This approach results in state-of-the-art performance on several feature learning benchmarks.</div></details></td>
         <td>AuC: non-rebal=89.5%rebal=67.3%VGG Top-1 Class Acc=56%AMT Labeled Real=32.3%</td>
         <td><a href="https://github.com/Callifrey/Paddle-CIC">快速开始</a></td>
     </tr>
@@ -93,14 +93,14 @@
     <tr>
         <td>12</td>
         <td><a href="https://arxiv.org/pdf/2001.07685v2.pdf">FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence</a></td>
-        <td><details><summary>Abstract</summary><div>Over the last decade, Convolutional Neural Network (CNN) models have beenhighly successful in solving complex vision problems. However, these deepmodels are perceived as "black box" methods considering the lack ofunderstanding of their internal functioning. There has been a significantrecent interest in developing explainable deep learning models, and this paperis an effort in this direction. Building on a recently proposed method calledGrad-CAM, we propose a generalized method called Grad-CAM++ that can providebetter visual explanations of CNN model predictions, in terms of better objectlocalization as well as explaining occurrences of multiple object instances ina single image, when compared to state-of-the-art. We provide a mathematicalderivation for the proposed method, which uses a weighted combination of thepositive partial derivatives of the last convolutional layer feature maps withrespect to a specific class score as weights to generate a visual explanationfor the corresponding class label. Our extensive experiments and evaluations,both subjective and objective, on standard datasets showed that Grad-CAM++provides promising human-interpretable visual explanations for a given CNNarchitecture across multiple tasks including classification, image captiongeneration and 3D action recognition; as well as in new settings such asknowledge distillation.</div></details></td>
+        <td><details><summary>Abstract</summary><div>Over the last decade, Convolutional Neural Network (CNN) models have beenhighly successful in solving complex vision problems. However, these deepmodels are perceived as"black box"methods considering the lack ofunderstanding of their internal functioning. There has been a significantrecent interest in developing explainable deep learning models, and this paperis an effort in this direction. Building on a recently proposed method calledGrad-CAM, we propose a generalized method called Grad-CAM++ that can providebetter visual explanations of CNN model predictions, in terms of better objectlocalization as well as explaining occurrences of multiple object instances ina single image, when compared to state-of-the-art. We provide a mathematicalderivation for the proposed method, which uses a weighted combination of thepositive partial derivatives of the last convolutional layer feature maps withrespect to a specific class score as weights to generate a visual explanationfor the corresponding class label. Our extensive experiments and evaluations,both subjective and objective, on standard datasets showed that Grad-CAM++provides promising human-interpretable visual explanations for a given CNNarchitecture across multiple tasks including classification, image captiongeneration and 3D action recognition; as well as in new settings such asknowledge distillation.</div></details></td>
         <td>cifar 10, 40label: 93.6%, 250 label 95.31%, 4000 labels 95.77%</td>
         <td><a href="https://github.com/S-HuaBomb/FixMatch-Paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>13</td>
         <td><a href="https://arxiv.org/pdf/2105.01601v4.pdf">MLP-Mixer: An all-MLP Architecture for Vision</a></td>
-        <td><details><summary>Abstract</summary><div>Convolutional Neural Networks (CNNs) are the go-to model for computer vision. Recently, attention-based networks, such as the Vision Transformer, have also become popular. In this paper we show that while convolutions and attention are both sufficient for good performance, neither of them are necessary. We present MLP-Mixer, an architecture based exclusively on multi-layer perceptrons (MLPs). MLP-Mixer contains two types of layers: one with MLPs applied independently to image patches (i.e. "mixing" the per-location features), and one with MLPs applied across patches (i.e. "mixing" spatial information). When trained on large datasets, or with modern regularization schemes, MLP-Mixer attains competitive scores on image classification benchmarks, with pre-training and inference cost comparable to state-of-the-art models. We hope that these results spark further research beyond the realms of well established CNNs and Transformers.</div></details></td>
+        <td><details><summary>Abstract</summary><div>Convolutional Neural Networks (CNNs) are the go-to model for computer vision. Recently, attention-based networks, such as the Vision Transformer, have also become popular. In this paper we show that while convolutions and attention are both sufficient for good performance, neither of them are necessary. We present MLP-Mixer, an architecture based exclusively on multi-layer perceptrons (MLPs). MLP-Mixer contains two types of layers: one with MLPs applied independently to image patches (i.e."mixing"the per-location features), and one with MLPs applied across patches (i.e."mixing"spatial information). When trained on large datasets, or with modern regularization schemes, MLP-Mixer attains competitive scores on image classification benchmarks, with pre-training and inference cost comparable to state-of-the-art models. We hope that these results spark further research beyond the realms of well established CNNs and Transformers.</div></details></td>
         <td>Mixer-B/16CIFAR-10upstream: ImageNet96.72%upstream: ImageNet-21k96.82%(官方JAX repo提供)</td>
         <td><a href="https://github.com/MiuGod0126/Mlp-Mixer-Paddle">快速开始</a></td>
     </tr>
@@ -116,7 +116,7 @@
         <td><a href="https://paperswithcode.com/paper/recurrent-models-of-visual-attention">Recurrent Models of Visual Attention </a></td>
         <td><details><summary>Abstract</summary><div>Applying convolutional neural networks to large images is computationally expensive because the amount of computation scales linearly with the number of image pixels. We present a novel recurrent neural network model that is capable of extracting information from an image or video by adaptively selecting a sequence of regions or locations and only processing the selected regions at high resolution. Like convolutional neural networks, the proposed model has a degree of translation invariance built-in, but the amount of computation it performs can be controlled independently of the input image size. While the model is non-differentiable, it can be trained using reinforcement learning methods to learn task-specific policies. We evaluate our model on several image classification tasks, where it significantly outperforms a convolutional neural network baseline on cluttered images, and on a dynamic visual control problem, where it learns to track a simple object without an explicit training signal for doing so.</div></details></td>
         <td>28*28 Mnist, RAM, 6 glimpses, 8 × 8, 1 scale达到论文指标</td>
-        <td><a href="https://github.com/MiuGod0126/RAM-Paddle ">快速开始</a></td>
+        <td><a href="https://github.com/MiuGod0126/RAM-Paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>16</td>
@@ -134,7 +134,7 @@
     </tr>
     <tr>
         <td>18</td>
-        <td><a href=" https://github.com/flytocc/mae-paddle">Masked Autoencoders Are Scalable Vision Learners</a></td>
+        <td><a href="https://github.com/flytocc/mae-paddle">Masked Autoencoders Are Scalable Vision Learners</a></td>
         <td><details><summary>Abstract</summary><div>This paper shows that masked autoencoders (MAE) are scalable self-supervised learners for computer vision. Our MAE approach is simple: we mask random patches of the input image and reconstruct the missing pixels. It is based on two core designs. First, we develop an asymmetric encoder-decoder architecture, with an encoder that operates only on the visible subset of patches (without mask tokens), along with a lightweight decoder that reconstructs the original image from the latent representation and mask tokens. Second, we find that masking a high proportion of the input image, e.g., 75%, yields a nontrivial and meaningful self-supervisory task. Coupling these two designs enables us to train large models efficiently and effectively: we accelerate training (by 3x or more) and improve accuracy. Our scalable approach allows for learning high-capacity models that generalize well: e.g., a vanilla ViT-Huge model achieves the best accuracy (87.8%) among methods that use only ImageNet-1K data. Transfer performance in downstream tasks outperforms supervised pre-training and shows promising scaling behavior.</div></details></td>
         <td>ImageNet1k: val 83.6%</td>
         <td><a href="https://github.com/flytocc/mae-paddle">快速开始</a></td>
@@ -219,7 +219,7 @@
     <tr>
         <td>30</td>
         <td><a href="https://arxiv.org/abs/2201.03545">A ConvNet for the 2020s</a></td>
-        <td><details><summary>Abstract</summary><div>The "Roaring 20s" of visual recognition began with the introduction of Vision Transformers (ViTs), which quickly superseded ConvNets as the state-of-the-art image classification model. A vanilla ViT, on the other hand, faces difficulties when applied to general computer vision tasks such as object detection and semantic segmentation. It is the hierarchical Transformers (e.g., Swin Transformers) that reintroduced several ConvNet priors, making Transformers practically viable as a generic vision backbone and demonstrating remarkable performance on a wide variety of vision tasks. However, the effectiveness of such hybrid approaches is still largely credited to the intrinsic superiority of Transformers, rather than the inherent inductive biases of convolutions. In this work, we reexamine the design spaces and test the limits of what a pure ConvNet can achieve. We gradually "modernize" a standard ResNet toward the design of a vision Transformer, and discover several key components that contribute to the performance difference along the way. The outcome of this exploration is a family of pure ConvNet models dubbed ConvNeXt. Constructed entirely from standard ConvNet modules, ConvNeXts compete favorably with Transformers in terms of accuracy and scalability, achieving 87.8% ImageNet top-1 accuracy and outperforming Swin Transformers on COCO detection and ADE20K segmentation, while maintaining the simplicity and efficiency of standard ConvNets.</div></details></td>
+        <td><details><summary>Abstract</summary><div>The"Roaring 20s"of visual recognition began with the introduction of Vision Transformers (ViTs), which quickly superseded ConvNets as the state-of-the-art image classification model. A vanilla ViT, on the other hand, faces difficulties when applied to general computer vision tasks such as object detection and semantic segmentation. It is the hierarchical Transformers (e.g., Swin Transformers) that reintroduced several ConvNet priors, making Transformers practically viable as a generic vision backbone and demonstrating remarkable performance on a wide variety of vision tasks. However, the effectiveness of such hybrid approaches is still largely credited to the intrinsic superiority of Transformers, rather than the inherent inductive biases of convolutions. In this work, we reexamine the design spaces and test the limits of what a pure ConvNet can achieve. We gradually"modernize"a standard ResNet toward the design of a vision Transformer, and discover several key components that contribute to the performance difference along the way. The outcome of this exploration is a family of pure ConvNet models dubbed ConvNeXt. Constructed entirely from standard ConvNet modules, ConvNeXts compete favorably with Transformers in terms of accuracy and scalability, achieving 87.8% ImageNet top-1 accuracy and outperforming Swin Transformers on COCO detection and ADE20K segmentation, while maintaining the simplicity and efficiency of standard ConvNets.</div></details></td>
         <td>ConvNeXt-T top1 acc 0.821</td>
         <td><a href="https://github.com/flytocc/ConvNeXt-paddle">快速开始</a></td>
     </tr>
@@ -247,7 +247,7 @@
     <tr>
         <td>34</td>
         <td><a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Chen_Destruction_and_Construction_Learning_for_Fine-Grained_Image_Recognition_CVPR_2019_paper.html">Destruction and Construction Learning for Fine-grained Image Recognition</a></td>
-        <td><details><summary>Abstract</summary><div>Delicate feature representation about object parts plays a critical role in fine-grained recognition. For example, experts can even distinguish fine-grained objects relying only on object parts according to professional knowledge. In this paper, we propose a novel "Destruction and Construction Learning" (DCL) method to enhance the difficulty of fine-grained recognition and exercise the classification model to acquire expert knowledge. Besides the standard classification backbone network, another "destruction and construction" stream is introduced to carefully "destruct" and then "reconstruct" the input image, for learning discriminative regions and features. More specifically, for "destruction", we first partition the input image into local regions and then shuffle them by a Region Confusion Mechanism (RCM). To correctly recognize these destructed images, the classification network has to pay more attention to discriminative regions for spotting the differences. To compensate the noises introduced by RCM, an adversarial loss, which distinguishes original images from destructed ones, is applied to reject noisy patterns introduced by RCM. For "construction", a region alignment network, which tries to restore the original spatial layout of local regions, is followed to model the semantic correlation among local regions. By jointly training with parameter sharing, our proposed DCL injects more discriminative local details to the classification network. Experimental results show that our proposed framework achieves state-of-the-art performance on three standard benchmarks. Moreover, our proposed method does not need any external knowledge during training, and there is no computation overhead at inference time except the standard classification network feed-forwarding. Source code: https://github.com/JDAI-CV/DCL.</div></details></td>
+        <td><details><summary>Abstract</summary><div>Delicate feature representation about object parts plays a critical role in fine-grained recognition. For example, experts can even distinguish fine-grained objects relying only on object parts according to professional knowledge. In this paper, we propose a novel"Destruction and Construction Learning"(DCL) method to enhance the difficulty of fine-grained recognition and exercise the classification model to acquire expert knowledge. Besides the standard classification backbone network, another"destruction and construction"stream is introduced to carefully"destruct"and then"reconstruct"the input image, for learning discriminative regions and features. More specifically, for"destruction", we first partition the input image into local regions and then shuffle them by a Region Confusion Mechanism (RCM). To correctly recognize these destructed images, the classification network has to pay more attention to discriminative regions for spotting the differences. To compensate the noises introduced by RCM, an adversarial loss, which distinguishes original images from destructed ones, is applied to reject noisy patterns introduced by RCM. For"construction", a region alignment network, which tries to restore the original spatial layout of local regions, is followed to model the semantic correlation among local regions. By jointly training with parameter sharing, our proposed DCL injects more discriminative local details to the classification network. Experimental results show that our proposed framework achieves state-of-the-art performance on three standard benchmarks. Moreover, our proposed method does not need any external knowledge during training, and there is no computation overhead at inference time except the standard classification network feed-forwarding. Source code: https://github.com/JDAI-CV/DCL.</div></details></td>
         <td>ResNet50, CUB-200-2011 acc 87.8%, Stanford Cars 94.5%, FGVC-Aircraft 93.0%</td>
         <td><a href="https://github.com/zzc98/PaddlePaddle_DCL">快速开始</a></td>
     </tr>
@@ -342,7 +342,7 @@
     <tr>
         <td>11</td>
         <td><a href="https://paperswithcode.com/paper/residual-attention-network-for-image">Residual Attention Network for Image Classification</a></td>
-        <td><details><summary>Abstract</summary><div>In this work, we propose "Residual Attention Network", a convolutional neural network using attention mechanism which can incorporate with state-of-art feed forward network architecture in an end-to-end training fashion. Our Residual Attention Network is built by stacking Attention Modules which generate attention-aware features. The attention-aware features from different modules change adaptively as layers going deeper. Inside each Attention Module, bottom-up top-down feedforward structure is used to unfold the feedforward and feedback attention process into a single feedforward process. Importantly, we propose attention residual learning to train very deep Residual Attention Networks which can be easily scaled up to hundreds of layers. Extensive analyses are conducted on CIFAR-10 and CIFAR-100 datasets to verify the effectiveness of every module mentioned above. Our Residual Attention Network achieves state-of-the-art object recognition performance on three benchmark datasets including CIFAR-10 (3.90% error), CIFAR-100 (20.45% error) and ImageNet (4.8% single model and single crop, top-5 error). Note that, our method achieves 0.6% top-1 accuracy improvement with 46% trunk depth and 69% forward FLOPs comparing to ResNet-200. The experiment also demonstrates that our network is robust against noisy labels.</div></details></td>
+        <td><details><summary>Abstract</summary><div>In this work, we propose"Residual Attention Network", a convolutional neural network using attention mechanism which can incorporate with state-of-art feed forward network architecture in an end-to-end training fashion. Our Residual Attention Network is built by stacking Attention Modules which generate attention-aware features. The attention-aware features from different modules change adaptively as layers going deeper. Inside each Attention Module, bottom-up top-down feedforward structure is used to unfold the feedforward and feedback attention process into a single feedforward process. Importantly, we propose attention residual learning to train very deep Residual Attention Networks which can be easily scaled up to hundreds of layers. Extensive analyses are conducted on CIFAR-10 and CIFAR-100 datasets to verify the effectiveness of every module mentioned above. Our Residual Attention Network achieves state-of-the-art object recognition performance on three benchmark datasets including CIFAR-10 (3.90% error), CIFAR-100 (20.45% error) and ImageNet (4.8% single model and single crop, top-5 error). Note that, our method achieves 0.6% top-1 accuracy improvement with 46% trunk depth and 69% forward FLOPs comparing to ResNet-200. The experiment also demonstrates that our network is robust against noisy labels.</div></details></td>
         <td>Attention-92 top1 error 4.99%</td>
         <td><a href="https://github.com/pooruss/Residual-Attention-Network-Paddle2.1.2">快速开始</a></td>
     </tr>
@@ -377,7 +377,7 @@
     <tr>
         <td>16</td>
         <td><a href="https://paperswithcode.com/paper/deep-predictive-coding-networks-for-video">Deep Predictive Coding Networks for Video Prediction and Unsupervised Learning</a></td>
-        <td><details><summary>Abstract</summary><div>While great strides have been made in using deep learning algorithms to solve supervised learning tasks, the problem of unsupervised learning - leveraging unlabeled examples to learn about the structure of a domain - remains a difficult unsolved challenge. Here, we explore prediction of future frames in a video sequence as an unsupervised learning rule for learning about the structure of the visual world. We describe a predictive neural network ("PredNet") architecture that is inspired by the concept of "predictive coding" from the neuroscience literature. These networks learn to predict future frames in a video sequence, with each layer in the network making local predictions and only forwarding deviations from those predictions to subsequent network layers. We show that these networks are able to robustly learn to predict the movement of synthetic (rendered) objects, and that in doing so, the networks learn internal representations that are useful for decoding latent object parameters (e.g. pose) that support object recognition with fewer training views. We also show that these networks can scale to complex natural image streams (car-mounted camera videos), capturing key aspects of both egocentric movement and the movement of objects in the visual scene, and the representation learned in this setting is useful for estimating the steering angle. Altogether, these results suggest that prediction represents a powerful framework for unsupervised learning, allowing for implicit learning of object and scene structure.</div></details></td>
+        <td><details><summary>Abstract</summary><div>While great strides have been made in using deep learning algorithms to solve supervised learning tasks, the problem of unsupervised learning - leveraging unlabeled examples to learn about the structure of a domain - remains a difficult unsolved challenge. Here, we explore prediction of future frames in a video sequence as an unsupervised learning rule for learning about the structure of the visual world. We describe a predictive neural network ("PredNet") architecture that is inspired by the concept of"predictive coding"from the neuroscience literature. These networks learn to predict future frames in a video sequence, with each layer in the network making local predictions and only forwarding deviations from those predictions to subsequent network layers. We show that these networks are able to robustly learn to predict the movement of synthetic (rendered) objects, and that in doing so, the networks learn internal representations that are useful for decoding latent object parameters (e.g. pose) that support object recognition with fewer training views. We also show that these networks can scale to complex natural image streams (car-mounted camera videos), capturing key aspects of both egocentric movement and the movement of objects in the visual scene, and the representation learned in this setting is useful for estimating the steering angle. Altogether, these results suggest that prediction represents a powerful framework for unsupervised learning, allowing for implicit learning of object and scene structure.</div></details></td>
         <td>KITTI: MSE 0.007</td>
         <td><a href="https://github.com/IcarusWizard/prednet-paddle">快速开始</a></td>
     </tr>
@@ -400,7 +400,7 @@
         <td><a href="https://arxiv.org/pdf/2107.08430v1.pdf">YOLOX: Exceeding YOLO Series in 2021 </a></td>
         <td><details><summary>Abstract</summary><div>In this report, we present some experienced improvements to YOLO series, forming a new high-performance detector — YOLOX. We switch the YOLO detector to an anchor-free manner and conduct other advanced detection techniques, i.e., a decoupled head and the leading label assignment strategy SimOTA to achieve state-of-the-art results across a large scale range of models: For YOLONano with only 0.91M parameters and 1.08G FLOPs, we get 25.3% AP on COCO, surpassing NanoDet by 1.8% AP; for YOLOv3, one of the most widely used detectors in industry, we boost it to 47.3% AP on COCO, outperforming the current best practice by 3.0% AP; for YOLOX-L with roughly the same amount of parameters as YOLOv4- CSP, YOLOv5-L, we achieve 50.0% AP on COCO at a speed of 68.9 FPS on Tesla V100, exceeding YOLOv5-L by 1.8% AP. Further, we won the 1st Place on Streaming Perception Challenge (Workshop on Autonomous Driving at CVPR 2021) using a single YOLOX-L model. We hope this report can provide useful experience for developers and * Equal contribution. † Corresponding author. researchers in practical scenes, and we also provide deploy versions with ONNX, TensorRT, NCNN, and Openvino supported. Source code is at https://github.com/ Megvii-BaseDetection/YOLOX.</div></details></td>
         <td>COCO 2017 test-dev, YOLOX-X (640*640) map: 51.2</td>
-        <td><a href="https://github.com/GuoQuanhao/YOLOX-Paddle ">快速开始</a></td>
+        <td><a href="https://github.com/GuoQuanhao/YOLOX-Paddle">快速开始</a></td>
     </tr>
 </table>
 
@@ -437,14 +437,14 @@
     <tr>
         <td>4</td>
         <td><a href="https://arxiv.org/abs/1807.10221">Unified Perceptual Parsing for Scene Understanding</a></td>
-        <td><details><summary>Abstract</summary><div>In this work we address the task of semantic image segmentation with DeepLearning and make three main contributions that are experimentally shown tohave substantial practical merit. First, we highlight convolution withupsampled filters, or 'atrous convolution', as a powerful tool in denseprediction tasks. Atrous convolution allows us to explicitly control theresolution at which feature responses are computed within Deep ConvolutionalNeural Networks. It also allows us to effectively enlarge the field of view offilters to incorporate larger context without increasing the number ofparameters or the amount of computation. Second, we propose atrous spatialpyramid pooling (ASPP) to robustly segment objects at multiple scales. ASPPprobes an incoming convolutional feature layer with filters at multiplesampling rates and effective fields-of-views, thus capturing objects as well asimage context at multiple scales. Third, we improve the localization of objectboundaries by combining methods from DCNNs and probabilistic graphical models.The commonly deployed combination of max-pooling and downsampling in DCNNsachieves invariance but has a toll on localization accuracy. We overcome thisby combining the responses at the final DCNN layer with a fully connectedConditional Random Field (CRF), which is shown both qualitatively andquantitatively to improve localization performance. Our proposed "DeepLab"system sets the new state-of-art at the PASCAL VOC-2012 semantic imagesegmentation task, reaching 79.7% mIOU in the test set, and advances theresults on three other datasets: PASCAL-Context, PASCAL-Person-Part, andCityscapes. All of our code is made publicly available online.</div></details></td>
+        <td><details><summary>Abstract</summary><div>In this work we address the task of semantic image segmentation with DeepLearning and make three main contributions that are experimentally shown tohave substantial practical merit. First, we highlight convolution withupsampled filters, or 'atrous convolution', as a powerful tool in denseprediction tasks. Atrous convolution allows us to explicitly control theresolution at which feature responses are computed within Deep ConvolutionalNeural Networks. It also allows us to effectively enlarge the field of view offilters to incorporate larger context without increasing the number ofparameters or the amount of computation. Second, we propose atrous spatialpyramid pooling (ASPP) to robustly segment objects at multiple scales. ASPPprobes an incoming convolutional feature layer with filters at multiplesampling rates and effective fields-of-views, thus capturing objects as well asimage context at multiple scales. Third, we improve the localization of objectboundaries by combining methods from DCNNs and probabilistic graphical models.The commonly deployed combination of max-pooling and downsampling in DCNNsachieves invariance but has a toll on localization accuracy. We overcome thisby combining the responses at the final DCNN layer with a fully connectedConditional Random Field (CRF), which is shown both qualitatively andquantitatively to improve localization performance. Our proposed"DeepLab"system sets the new state-of-art at the PASCAL VOC-2012 semantic imagesegmentation task, reaching 79.7% mIOU in the test set, and advances theresults on three other datasets: PASCAL-Context, PASCAL-Person-Part, andCityscapes. All of our code is made publicly available online.</div></details></td>
         <td>Cityscapes mIoU 80.1%</td>
         <td><a href="https://github.com/Shun14/UperNet">快速开始</a></td>
     </tr>
     <tr>
         <td>5</td>
         <td><a href="https://arxiv.org/abs/1606.00915">DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs</a></td>
-        <td><details><summary>Abstract</summary><div>In this work we address the task of semantic image segmentation with Deep Learning and make three main contributions that are experimentally shown to have substantial practical merit. First, we highlight convolution with upsampled filters, or 'atrous convolution', as a powerful tool in dense prediction tasks. Atrous convolution allows us to explicitly control the resolution at which feature responses are computed within Deep Convolutional Neural Networks. It also allows us to effectively enlarge the field of view of filters to incorporate larger context without increasing the number of parameters or the amount of computation. Second, we propose atrous spatial pyramid pooling (ASPP) to robustly segment objects at multiple scales. ASPP probes an incoming convolutional feature layer with filters at multiple sampling rates and effective fields-of-views, thus capturing objects as well as image context at multiple scales. Third, we improve the localization of object boundaries by combining methods from DCNNs and probabilistic graphical models. The commonly deployed combination of max-pooling and downsampling in DCNNs achieves invariance but has a toll on localization accuracy. We overcome this by combining the responses at the final DCNN layer with a fully connected Conditional Random Field (CRF), which is shown both qualitatively and quantitatively to improve localization performance. Our proposed "DeepLab" system sets the new state-of-art at the PASCAL VOC-2012 semantic image segmentation task, reaching 79.7% mIOU in the test set, and advances the results on three other datasets: PASCAL-Context, PASCAL-Person-Part, and Cityscapes. All of our code is made publicly available online.</div></details></td>
+        <td><details><summary>Abstract</summary><div>In this work we address the task of semantic image segmentation with Deep Learning and make three main contributions that are experimentally shown to have substantial practical merit. First, we highlight convolution with upsampled filters, or 'atrous convolution', as a powerful tool in dense prediction tasks. Atrous convolution allows us to explicitly control the resolution at which feature responses are computed within Deep Convolutional Neural Networks. It also allows us to effectively enlarge the field of view of filters to incorporate larger context without increasing the number of parameters or the amount of computation. Second, we propose atrous spatial pyramid pooling (ASPP) to robustly segment objects at multiple scales. ASPP probes an incoming convolutional feature layer with filters at multiple sampling rates and effective fields-of-views, thus capturing objects as well as image context at multiple scales. Third, we improve the localization of object boundaries by combining methods from DCNNs and probabilistic graphical models. The commonly deployed combination of max-pooling and downsampling in DCNNs achieves invariance but has a toll on localization accuracy. We overcome this by combining the responses at the final DCNN layer with a fully connected Conditional Random Field (CRF), which is shown both qualitatively and quantitatively to improve localization performance. Our proposed"DeepLab"system sets the new state-of-art at the PASCAL VOC-2012 semantic image segmentation task, reaching 79.7% mIOU in the test set, and advances the results on three other datasets: PASCAL-Context, PASCAL-Person-Part, and Cityscapes. All of our code is made publicly available online.</div></details></td>
         <td>Cityscapes mIoU 71.4%</td>
         <td><a href="https://github.com/Shun14/deeplab-paddle">快速开始</a></td>
     </tr>
@@ -514,7 +514,7 @@
     <tr>
         <td>15</td>
         <td><a href="https://arxiv.org/abs/2101.11939">Exploring Cross-Image Pixel Contrast for Semantic Segmentation</a></td>
-        <td><details><summary>Abstract</summary><div>Current semantic segmentation methods focus only on mining "local" context, i.e., dependencies between pixels within individual images, by context-aggregation modules (e.g., dilated convolution, neural attention) or structure-aware optimization criteria (e.g., IoU-like loss). However, they ignore "global" context of the training data, i.e., rich semantic relations between pixels across different images. Inspired by the recent advance in unsupervised contrastive representation learning, we propose a pixel-wise contrastive framework for semantic segmentation in the fully supervised setting. The core idea is to enforce pixel embeddings belonging to a same semantic class to be more similar than embeddings from different classes. It raises a pixel-wise metric learning paradigm for semantic segmentation, by explicitly exploring the structures of labeled pixels, which were rarely explored before. Our method can be effortlessly incorporated into existing segmentation frameworks without extra overhead during testing. We experimentally show that, with famous segmentation models (i.e., DeepLabV3, HRNet, OCR) and backbones (i.e., ResNet, HR-Net), our method brings consistent performance improvements across diverse datasets (i.e., Cityscapes, PASCAL-Context, COCO-Stuff, CamVid). We expect this work will encourage our community to rethink the current de facto training paradigm in fully supervised semantic segmentation.</div></details></td>
+        <td><details><summary>Abstract</summary><div>Current semantic segmentation methods focus only on mining"local"context, i.e., dependencies between pixels within individual images, by context-aggregation modules (e.g., dilated convolution, neural attention) or structure-aware optimization criteria (e.g., IoU-like loss). However, they ignore"global"context of the training data, i.e., rich semantic relations between pixels across different images. Inspired by the recent advance in unsupervised contrastive representation learning, we propose a pixel-wise contrastive framework for semantic segmentation in the fully supervised setting. The core idea is to enforce pixel embeddings belonging to a same semantic class to be more similar than embeddings from different classes. It raises a pixel-wise metric learning paradigm for semantic segmentation, by explicitly exploring the structures of labeled pixels, which were rarely explored before. Our method can be effortlessly incorporated into existing segmentation frameworks without extra overhead during testing. We experimentally show that, with famous segmentation models (i.e., DeepLabV3, HRNet, OCR) and backbones (i.e., ResNet, HR-Net), our method brings consistent performance improvements across diverse datasets (i.e., Cityscapes, PASCAL-Context, COCO-Stuff, CamVid). We expect this work will encourage our community to rethink the current de facto training paradigm in fully supervised semantic segmentation.</div></details></td>
         <td>HRNet-W48 Cityscaoes mIOU=80.18</td>
         <td><a href="https://github.com/justld/contrast_seg_paddle">快速开始</a></td>
     </tr>
@@ -689,7 +689,7 @@
     <tr>
         <td>40</td>
         <td><a href="https://paperswithcode.com/paper/unetr-transformers-for-3d-medical-image">UNETR: Transformers for 3D Medical Image</a></td>
-        <td><details><summary>Abstract</summary><div>Fully Convolutional Neural Networks (FCNNs) with contracting and expanding paths have shown prominence for the majority of medical image segmentation applications since the past decade. In FCNNs, the encoder plays an integral role by learning both global and local features and contextual representations which can be utilized for semantic output prediction by the decoder. Despite their success, the locality of convolutional layers in FCNNs, limits the capability of learning long-range spatial dependencies. Inspired by the recent success of transformers for Natural Language Processing (NLP) in long-range sequence learning, we reformulate the task of volumetric (3D) medical image segmentation as a sequence-to-sequence prediction problem. We introduce a novel architecture, dubbed as UNEt TRansformers (UNETR), that utilizes a transformer as the encoder to learn sequence representations of the input volume and effectively capture the global multi-scale information, while also following the successful "U-shaped" network design for the encoder and decoder. The transformer encoder is directly connected to a decoder via skip connections at different resolutions to compute the final semantic segmentation output. We have validated the performance of our method on the Multi Atlas Labeling Beyond The Cranial Vault (BTCV) dataset for multi-organ segmentation and the Medical Segmentation Decathlon (MSD) dataset for brain tumor and spleen segmentation tasks. Our benchmarks demonstrate new state-of-the-art performance on the BTCV leaderboard. Code: https://monai.io/research/unetr</div></details></td>
+        <td><details><summary>Abstract</summary><div>Fully Convolutional Neural Networks (FCNNs) with contracting and expanding paths have shown prominence for the majority of medical image segmentation applications since the past decade. In FCNNs, the encoder plays an integral role by learning both global and local features and contextual representations which can be utilized for semantic output prediction by the decoder. Despite their success, the locality of convolutional layers in FCNNs, limits the capability of learning long-range spatial dependencies. Inspired by the recent success of transformers for Natural Language Processing (NLP) in long-range sequence learning, we reformulate the task of volumetric (3D) medical image segmentation as a sequence-to-sequence prediction problem. We introduce a novel architecture, dubbed as UNEt TRansformers (UNETR), that utilizes a transformer as the encoder to learn sequence representations of the input volume and effectively capture the global multi-scale information, while also following the successful"U-shaped"network design for the encoder and decoder. The transformer encoder is directly connected to a decoder via skip connections at different resolutions to compute the final semantic segmentation output. We have validated the performance of our method on the Multi Atlas Labeling Beyond The Cranial Vault (BTCV) dataset for multi-organ segmentation and the Medical Segmentation Decathlon (MSD) dataset for brain tumor and spleen segmentation tasks. Our benchmarks demonstrate new state-of-the-art performance on the BTCV leaderboard. Code: https://monai.io/research/unetr</div></details></td>
         <td>nan</td>
         <td><a href="https://github.com/sun222/PaddleSeg/tree/release/2.5/contrib/MedicalSeg">快速开始</a></td>
     </tr>
@@ -758,7 +758,7 @@
         <td><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Chen_Scene_Text_Telescope_Text-Focused_Scene_Image_Super-Resolution_CVPR_2021_paper.pdf">Scene Text Telescope: Text-Focused Scene Image Super-Resolution</a></td>
         <td><details><summary>Abstract</summary><div>Image super-resolution, which is often regarded as a preprocessing procedure of scene text recognition, aims to recover the realistic features from a low-resolution text image. It has always been challenging due to large variations in text shapes, fonts, backgrounds, etc. However, most existing methods employ generic super-resolution frameworks to handle scene text images while ignoring text-specific properties such as text-level layouts and character-level details. In this paper, we establish a text-focused super-resolution framework, called Scene Text Telescope (STT). In terms of text-level layouts, we propose a Transformer-Based Super-Resolution Network (TBSRN) containing a Self-Attention Module to extract sequential information, which is robust to tackle the texts in arbitrary orientations. In terms of character-level details, we propose a Position-Aware Module and a Content-Aware Module to highlight the position and the content of each character. By observing that some characters look indistinguishable in low-resolution conditions, we use a weighted cross-entropy loss to tackle this problem. We conduct extensive experiments, including text recognition with pre-trained recognizers and image quality evaluation, on TextZoom and several scene text recognition benchmarks to assess the super-resolution images. The experimental results show that our STT can indeed generate text-focused super-resolution images and outperform the existing methods in terms of recognition accuracy.</div></details></td>
         <td>CRNN+tbsrn，easy: 0.5979, medium: 0.4507, hard: 0.3418, avg: 0.4634</td>
-        <td><a href="https://github.com/Lieberk/Paddle-TextSR-STT ">快速开始</a></td>
+        <td><a href="https://github.com/Lieberk/Paddle-TextSR-STT">快速开始</a></td>
     </tr>
     <tr>
         <td>9</td>
@@ -1041,7 +1041,7 @@
     <tr>
         <td>3</td>
         <td><a href="https://arxiv.org/pdf/2201.10703v2.pdf">Anomaly Detection via Reverse Distillation from One-Class Embedding</a></td>
-        <td><details><summary>Abstract</summary><div>Knowledge distillation (KD) achieves promising results on the challenging problem of unsupervised anomaly detection (AD).The representation discrepancy of anomalies in the teacher-student (T-S) model provides essential evidence for AD. However, using similar or identical architectures to build the teacher and student models in previous studies hinders the diversity of anomalous representations. To tackle this problem, we propose a novel T-S model consisting of a teacher encoder and a student decoder and introduce a simple yet effective "reverse distillation" paradigm accordingly. Instead of receiving raw images directly, the student network takes teacher model's one-class embedding as input and targets to restore the teacher's multiscale representations. Inherently, knowledge distillation in this study starts from abstract, high-level presentations to low-level features. In addition, we introduce a trainable one-class bottleneck embedding (OCBE) module in our T-S model. The obtained compact embedding effectively preserves essential information on normal patterns, but abandons anomaly perturbations. Extensive experimentation on AD and one-class novelty detection benchmarks shows that our method surpasses SOTA performance, demonstrating our proposed approach's effectiveness and generalizability.</div></details></td>
+        <td><details><summary>Abstract</summary><div>Knowledge distillation (KD) achieves promising results on the challenging problem of unsupervised anomaly detection (AD).The representation discrepancy of anomalies in the teacher-student (T-S) model provides essential evidence for AD. However, using similar or identical architectures to build the teacher and student models in previous studies hinders the diversity of anomalous representations. To tackle this problem, we propose a novel T-S model consisting of a teacher encoder and a student decoder and introduce a simple yet effective"reverse distillation"paradigm accordingly. Instead of receiving raw images directly, the student network takes teacher model's one-class embedding as input and targets to restore the teacher's multiscale representations. Inherently, knowledge distillation in this study starts from abstract, high-level presentations to low-level features. In addition, we introduce a trainable one-class bottleneck embedding (OCBE) module in our T-S model. The obtained compact embedding effectively preserves essential information on normal patterns, but abandons anomaly perturbations. Extensive experimentation on AD and one-class novelty detection benchmarks shows that our method surpasses SOTA performance, demonstrating our proposed approach's effectiveness and generalizability.</div></details></td>
         <td>MVTec AD数据集， 256尺度，wide-resnet50，detection AUROC 98.5%， loc-AUROC 97.8%， loc-PRO 93.9%</td>
         <td><a href="https://github.com/renmada/RD4AD-paddle">快速开始</a></td>
     </tr>
@@ -1069,7 +1069,7 @@
     <tr>
         <td>7</td>
         <td><a href="https://arxiv.org/pdf/2011.11108.pdf">Multiresolution Knowledge Distillation for Anomaly Detection</a></td>
-        <td><details><summary>Abstract</summary><div>Unsupervised representation learning has proved to be a critical component of anomaly detection/localization in images. The challenges to learn such a representation are two-fold. Firstly, the sample size is not often large enough to learn a rich generalizable representation through conventional techniques. Secondly, while only normal samples are available at training, the learned features should be discriminative of normal and anomalous samples. Here, we propose to use the "distillation" of features at various layers of an expert network, pre-trained on ImageNet, into a simpler cloner network to tackle both issues. We detect and localize anomalies using the discrepancy between the expert and cloner networks' intermediate activation values given the input data. We show that considering multiple intermediate hints in distillation leads to better exploiting the expert's knowledge and more distinctive discrepancy compared to solely utilizing the last layer activation values. Notably, previous methods either fail in precise anomaly localization or need expensive region-based training. In contrast, with no need for any special or intensive training procedure, we incorporate interpretability algorithms in our novel framework for the localization of anomalous regions. Despite the striking contrast between some test datasets and ImageNet, we achieve competitive or significantly superior results compared to the SOTA methods on MNIST, F-MNIST, CIFAR-10, MVTecAD, Retinal-OCT, and two Medical datasets on both anomaly detection and localization.</div></details></td>
+        <td><details><summary>Abstract</summary><div>Unsupervised representation learning has proved to be a critical component of anomaly detection/localization in images. The challenges to learn such a representation are two-fold. Firstly, the sample size is not often large enough to learn a rich generalizable representation through conventional techniques. Secondly, while only normal samples are available at training, the learned features should be discriminative of normal and anomalous samples. Here, we propose to use the"distillation"of features at various layers of an expert network, pre-trained on ImageNet, into a simpler cloner network to tackle both issues. We detect and localize anomalies using the discrepancy between the expert and cloner networks' intermediate activation values given the input data. We show that considering multiple intermediate hints in distillation leads to better exploiting the expert's knowledge and more distinctive discrepancy compared to solely utilizing the last layer activation values. Notably, previous methods either fail in precise anomaly localization or need expensive region-based training. In contrast, with no need for any special or intensive training procedure, we incorporate interpretability algorithms in our novel framework for the localization of anomalous regions. Despite the striking contrast between some test datasets and ImageNet, we achieve competitive or significantly superior results compared to the SOTA methods on MNIST, F-MNIST, CIFAR-10, MVTecAD, Retinal-OCT, and two Medical datasets on both anomaly detection and localization.</div></details></td>
         <td>mvtec detection AUROC 87.74%, loc AUROC 90.71%</td>
         <td><a href="https://github.com/txyugood/Knowledge_Distillation_AD_Paddle">快速开始</a></td>
     </tr>
@@ -1115,7 +1115,7 @@
     <tr>
         <td>3</td>
         <td><a href="https://arxiv.org/pdf/2003.03808v3.pdf">PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models</a></td>
-        <td><details><summary>Abstract</summary><div>The primary aim of single-image super-resolution is to construct high-resolution (HR) images from corresponding low-resolution (LR) inputs. In previous approaches, which have generally been supervised, the training objective typically measures a pixel-wise average distance between the super-resolved (SR) and HR images. Optimizing such metrics often leads to blurring, especially in high variance (detailed) regions. We propose an alternative formulation of the super-resolution problem based on creating realistic SR images that downscale correctly. We present an algorithm addressing this problem, PULSE (Photo Upsampling via Latent Space Exploration), which generates high-resolution, realistic images at resolutions previously unseen in the literature. It accomplishes this in an entirely self-supervised fashion and is not confined to a specific degradation operator used during training, unlike previous methods (which require supervised training on databases of LR-HR image pairs). Instead of starting with the LR image and slowly adding detail, PULSE traverses the high-resolution natural image manifold, searching for images that downscale to the original LR image. This is formalized through the "downscaling loss," which guides exploration through the latent space of a generative model. By leveraging properties of high-dimensional Gaussians, we restrict the search space to guarantee realistic outputs. PULSE thereby generates super-resolved images that both are realistic and downscale correctly. We show proof of concept of our approach in the domain of face super-resolution (i.e., face hallucination). We also present a discussion of the limitations and biases of the method as currently implemented with an accompanying model card with relevant metrics. Our method outperforms state-of-the-art methods in perceptual quality at higher resolutions and scale factors than previously possible.</div></details></td>
+        <td><details><summary>Abstract</summary><div>The primary aim of single-image super-resolution is to construct high-resolution (HR) images from corresponding low-resolution (LR) inputs. In previous approaches, which have generally been supervised, the training objective typically measures a pixel-wise average distance between the super-resolved (SR) and HR images. Optimizing such metrics often leads to blurring, especially in high variance (detailed) regions. We propose an alternative formulation of the super-resolution problem based on creating realistic SR images that downscale correctly. We present an algorithm addressing this problem, PULSE (Photo Upsampling via Latent Space Exploration), which generates high-resolution, realistic images at resolutions previously unseen in the literature. It accomplishes this in an entirely self-supervised fashion and is not confined to a specific degradation operator used during training, unlike previous methods (which require supervised training on databases of LR-HR image pairs). Instead of starting with the LR image and slowly adding detail, PULSE traverses the high-resolution natural image manifold, searching for images that downscale to the original LR image. This is formalized through the"downscaling loss,"which guides exploration through the latent space of a generative model. By leveraging properties of high-dimensional Gaussians, we restrict the search space to guarantee realistic outputs. PULSE thereby generates super-resolved images that both are realistic and downscale correctly. We show proof of concept of our approach in the domain of face super-resolution (i.e., face hallucination). We also present a discussion of the limitations and biases of the method as currently implemented with an accompanying model card with relevant metrics. Our method outperforms state-of-the-art methods in perceptual quality at higher resolutions and scale factors than previously possible.</div></details></td>
         <td>CelebA HQ 3.6</td>
         <td><a href="https://github.com/Martion-z/Paddle-PULSE">快速开始</a></td>
     </tr>
@@ -1131,7 +1131,7 @@
         <td><a href="https://paperswithcode.com/paper/finding-tiny-faces">Finding Tiny Faces</a></td>
         <td><details><summary>Abstract</summary><div>Though tremendous strides have been made in object recognition, one of the remaining open challenges is detecting small objects. We explore three aspects of the problem in the context of finding small faces: the role of scale invariance, image resolution, and contextual reasoning. While most recognition approaches aim to be scale-invariant, the cues for recognizing a 3px tall face are fundamentally different than those for recognizing a 300px tall face. We take a different approach and train separate detectors for different scales. To maintain efficiency, detectors are trained in a multi-task fashion: they make use of features extracted from multiple layers of single (deep) feature hierarchy. While training detectors for large objects is straightforward, the crucial challenge remains training detectors for small objects. We show that context is crucial, and define templates that make use of massively-large receptive fields (where 99% of the template extends beyond the object of interest). Finally, we explore the role of scale in pre-trained deep networks, providing ways to extrapolate networks tuned for limited scales to rather extreme ranges. We demonstrate state-of-the-art results on massively-benchmarked face datasets (FDDB and WIDER FACE). In particular, when compared to prior art on WIDER FACE, our results reduce error by a factor of 2 (our models produce an AP of 82% while prior art ranges from 29-64%).</div></details></td>
         <td>WIDER_FACE:  resnet50  500*500 easy: 0.902 medium: 0.892 medium: 0.892</td>
-        <td><a href="https://github.com/GuoQuanhao/Tiny-Face-Paddle ">快速开始</a></td>
+        <td><a href="https://github.com/GuoQuanhao/Tiny-Face-Paddle">快速开始</a></td>
     </tr>
 </table>
 
@@ -1161,7 +1161,7 @@
     <tr>
         <td>3</td>
         <td><a href="https://paperswithcode.com/paper/drop-an-octave-reducing-spatial-redundancy-in">Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution </a></td>
-        <td><details><summary>Abstract</summary><div>In natural images, information is conveyed at different frequencies where higher frequencies are usually encoded with fine details and lower frequencies are usually encoded with global structures. Similarly, the output feature maps of a convolution layer can also be seen as a mixture of information at different frequencies. In this work, we propose to factorize the mixed feature maps by their frequencies, and design a novel Octave Convolution (OctConv) operation to store and process feature maps that vary spatially "slower" at a lower spatial resolution reducing both memory and computation cost. Unlike existing multi-scale methods, OctConv is formulated as a single, generic, plug-and-play convolutional unit that can be used as a direct replacement of (vanilla) convolutions without any adjustments in the network architecture. It is also orthogonal and complementary to methods that suggest better topologies or reduce channel-wise redundancy like group or depth-wise convolutions. We experimentally show that by simply replacing convolutions with OctConv, we can consistently boost accuracy for both image and video recognition tasks, while reducing memory and computational cost. An OctConv-equipped ResNet-152 can achieve 82.9% top-1 classification accuracy on ImageNet with merely 22.2 GFLOPs.</div></details></td>
+        <td><details><summary>Abstract</summary><div>In natural images, information is conveyed at different frequencies where higher frequencies are usually encoded with fine details and lower frequencies are usually encoded with global structures. Similarly, the output feature maps of a convolution layer can also be seen as a mixture of information at different frequencies. In this work, we propose to factorize the mixed feature maps by their frequencies, and design a novel Octave Convolution (OctConv) operation to store and process feature maps that vary spatially"slower"at a lower spatial resolution reducing both memory and computation cost. Unlike existing multi-scale methods, OctConv is formulated as a single, generic, plug-and-play convolutional unit that can be used as a direct replacement of (vanilla) convolutions without any adjustments in the network architecture. It is also orthogonal and complementary to methods that suggest better topologies or reduce channel-wise redundancy like group or depth-wise convolutions. We experimentally show that by simply replacing convolutions with OctConv, we can consistently boost accuracy for both image and video recognition tasks, while reducing memory and computational cost. An OctConv-equipped ResNet-152 can achieve 82.9% top-1 classification accuracy on ImageNet with merely 22.2 GFLOPs.</div></details></td>
         <td>imagenet: 1.125 MobileNet (v2) 3224224 imagenet top1 73</td>
         <td><a href="https://github.com/renmada/OctConv-paddle">快速开始</a></td>
     </tr>
@@ -1340,7 +1340,7 @@
     <tr>
         <td>20</td>
         <td><a href="https://paperswithcode.com/paper/fnet-mixing-tokens-with-fourier-transforms">FNet: Mixing Tokens with Fourier Transforms</a></td>
-        <td><details><summary>Abstract</summary><div>We show that Transformer encoder architectures can be sped up, with limited accuracy costs, by replacing the self-attention sublayers with simple linear transformations that "mix" input tokens. These linear mixers, along with standard nonlinearities in feed-forward layers, prove competent at modeling semantic relationships in several text classification tasks. Most surprisingly, we find that replacing the self-attention sublayer in a Transformer encoder with a standard, unparameterized Fourier Transform achieves 92-97% of the accuracy of BERT counterparts on the GLUE benchmark, but trains 80% faster on GPUs and 70% faster on TPUs at standard 512 input lengths. At longer input lengths, our FNet model is significantly faster: when compared to the "efficient" Transformers on the Long Range Arena benchmark, FNet matches the accuracy of the most accurate models, while outpacing the fastest models across all sequence lengths on GPUs (and across relatively shorter lengths on TPUs). Finally, FNet has a light memory footprint and is particularly efficient at smaller model sizes; for a fixed speed and accuracy budget, small FNet models outperform Transformer counterparts.</div></details></td>
+        <td><details><summary>Abstract</summary><div>We show that Transformer encoder architectures can be sped up, with limited accuracy costs, by replacing the self-attention sublayers with simple linear transformations that"mix"input tokens. These linear mixers, along with standard nonlinearities in feed-forward layers, prove competent at modeling semantic relationships in several text classification tasks. Most surprisingly, we find that replacing the self-attention sublayer in a Transformer encoder with a standard, unparameterized Fourier Transform achieves 92-97% of the accuracy of BERT counterparts on the GLUE benchmark, but trains 80% faster on GPUs and 70% faster on TPUs at standard 512 input lengths. At longer input lengths, our FNet model is significantly faster: when compared to the"efficient"Transformers on the Long Range Arena benchmark, FNet matches the accuracy of the most accurate models, while outpacing the fastest models across all sequence lengths on GPUs (and across relatively shorter lengths on TPUs). Finally, FNet has a light memory footprint and is particularly efficient at smaller model sizes; for a fixed speed and accuracy budget, small FNet models outperform Transformer counterparts.</div></details></td>
         <td>QQP验证集Acc=85%, SST-2验证集Acc=95%(见论文Table1)</td>
         <td><a href="https://github.com/HJHGJGHHG/Paddle-FNet">快速开始</a></td>
     </tr>
@@ -1356,7 +1356,7 @@
         <td><a href="https://paperswithcode.com/paper/luke-deep-contextualized-entity"> LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention</a></td>
         <td><details><summary>Abstract</summary><div>Entity representations are useful in natural language tasks involving entities. In this paper, we propose new pretrained contextualized representations of words and entities based on the bidirectional transformer. The proposed model treats words and entities in a given text as independent tokens, and outputs contextualized representations of them. Our model is trained using a new pretraining task based on the masked language model of BERT. The task involves predicting randomly masked words and entities in a large entity-annotated corpus retrieved from Wikipedia. We also propose an entity-aware self-attention mechanism that is an extension of the self-attention mechanism of the transformer, and considers the types of tokens (words or entities) when computing attention scores. The proposed model achieves impressive empirical performance on a wide range of entity-related tasks. In particular, it obtains state-of-the-art results on five well-known datasets: Open Entity (entity typing), TACRED (relation classification), CoNLL-2003 (named entity recognition), ReCoRD (cloze-style question answering), and SQuAD 1.1 (extractive question answering). Our source code and pretrained representations are available at https://github.com/studio-ousia/luke.</div></details></td>
         <td>Open Entity: F1=78.2, SQuAD1.1: F1=95.4, EM=90.2(见论文Table1 & Table5)</td>
-        <td><a href="https://github.com/Beacontownfc/paddle_luke_stable ">快速开始</a></td>
+        <td><a href="https://github.com/Beacontownfc/paddle_luke_stable">快速开始</a></td>
     </tr>
     <tr>
         <td>23</td>
@@ -1384,7 +1384,7 @@
         <td><a href="https://arxiv.org/pdf/1801.06146v5.pdf">Universal Language Model Fine-tuning for Text Classification  </a></td>
         <td><details><summary>Abstract</summary><div>Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18- 24% on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100× more data. We opensource our pretrained models and code1 .</div></details></td>
         <td>AG’s News: Err=5.01% (见论文Table 3)</td>
-        <td><a href=" https://github.com/akari0216/Paddle-awdlstm">快速开始</a></td>
+        <td><a href="https://github.com/akari0216/Paddle-awdlstm">快速开始</a></td>
     </tr>
     <tr>
         <td>27</td>
@@ -1620,7 +1620,7 @@
         <td><a href="https://arxiv.org/pdf/2106.03760v2.pdf">DSelect-k: Differentiable Selection in the Mixture of Experts with Applications to Multi-Task Learning</a></td>
         <td><details><summary>Abstract</summary><div>The Mixture-of-experts (MoE) architecture is showing promising results in multitask learning (MTL) and in scaling high-capacity neural networks. State-of-the-art MoE models use a trainable “sparse gate” to select a subset of the experts for each input example. While conceptually appealing, existing sparse gates, such as Top-k, are not smooth. The lack of smoothness can lead to convergence and statistical performance issues when training with gradient-based methods. In this paper, we develop DSelect-k: the first, continuously differentiable and sparse gate for MoE, based on a novel binary encoding formulation. Our gate can be trained using first-order methods, such as stochastic gradient descent, and offers explicit control over the number of experts to select. We demonstrate the effectiveness of DSelect-k in the context of MTL, on both synthetic and real datasets with up to 128 tasks. Our experiments indicate that MoE models based on DSelect-k can achieve statistically significant improvements in predictive and expert selection performance. Notably, on a real-world large-scale recommender system, DSelect-k achieves over 22% average improvement in predictive performance compared to the Top-k gate. We provide an open-source TensorFlow implementation of our gate1 .</div></details></td>
         <td>MNIST: Accuracy1 92.56%  Accuracy2: 90.98 %</td>
-        <td><a href="https://github.com/Andy1314Chen/PaddleRec/tree/mtl-dselect-k  ">快速开始</a></td>
+        <td><a href="https://github.com/Andy1314Chen/PaddleRec/tree/mtl-dselect-k ">快速开始</a></td>
     </tr>
     <tr>
         <td>14</td>
@@ -1741,7 +1741,7 @@
     <tr>
         <td>4</td>
         <td><a href="https://arxiv.org/abs/1603.06937">Stacked Hourglass Networks for Human Pose Estimation</a></td>
-        <td><details><summary>Abstract</summary><div>This work introduces a novel convolutional network architecture for the task of human pose estimation. Features are processed across all scales and consolidated to best capture the various spatial relationships associated with the body. We show how repeated bottom-up, top-down processing used in conjunction with intermediate supervision is critical to improving the performance of the network. We refer to the architecture as a "stacked hourglass" network based on the successive steps of pooling and upsampling that are done to produce a final set of predictions. State-of-the-art results are achieved on the FLIC and MPII benchmarks outcompeting all recent methods.</div></details></td>
+        <td><details><summary>Abstract</summary><div>This work introduces a novel convolutional network architecture for the task of human pose estimation. Features are processed across all scales and consolidated to best capture the various spatial relationships associated with the body. We show how repeated bottom-up, top-down processing used in conjunction with intermediate supervision is critical to improving the performance of the network. We refer to the architecture as a"stacked hourglass"network based on the successive steps of pooling and upsampling that are done to produce a final set of predictions. State-of-the-art results are achieved on the FLIC and MPII benchmarks outcompeting all recent methods.</div></details></td>
         <td>MPII Human Pose Dataset, hourglass52, size: 384x384, mean@0.1: 0.366 size: 256x256, mean@0.1: 0.317</td>
         <td><a href="https://github.com/txyugood/PaddlePose">快速开始</a></td>
     </tr>
@@ -1755,7 +1755,7 @@
     <tr>
         <td>6</td>
         <td><a href="https://arxiv.org/pdf/1511.05644v2.pdf">Adversarial Autoencoders</a></td>
-        <td><details><summary>Abstract</summary><div>In this paper, we propose the "adversarial autoencoder" (AAE), which is a probabilistic autoencoder that uses the recently proposed generative adversarial networks (GAN) to perform variational inference by matching the aggregated posterior of the hidden code vector of the autoencoder with an arbitrary prior distribution. Matching the aggregated posterior to the prior ensures that generating from any part of prior space results in meaningful samples. As a result, the decoder of the adversarial autoencoder learns a deep generative model that maps the imposed prior to the data distribution. We show how the adversarial autoencoder can be used in applications such as semi-supervised classification, disentangling style and content of images, unsupervised clustering, dimensionality reduction and data visualization. We performed experiments on MNIST, Street View House Numbers and Toronto Face datasets and show that adversarial autoencoders achieve competitive results in generative modeling and semi-supervised classification tasks.</div></details></td>
+        <td><details><summary>Abstract</summary><div>In this paper, we propose the"adversarial autoencoder"(AAE), which is a probabilistic autoencoder that uses the recently proposed generative adversarial networks (GAN) to perform variational inference by matching the aggregated posterior of the hidden code vector of the autoencoder with an arbitrary prior distribution. Matching the aggregated posterior to the prior ensures that generating from any part of prior space results in meaningful samples. As a result, the decoder of the adversarial autoencoder learns a deep generative model that maps the imposed prior to the data distribution. We show how the adversarial autoencoder can be used in applications such as semi-supervised classification, disentangling style and content of images, unsupervised clustering, dimensionality reduction and data visualization. We performed experiments on MNIST, Street View House Numbers and Toronto Face datasets and show that adversarial autoencoders achieve competitive results in generative modeling and semi-supervised classification tasks.</div></details></td>
         <td>MNIST, Log-likelihood(10K): 340±2</td>
         <td><a href="https://github.com/keil555/AAE_paddle">快速开始</a></td>
     </tr>
@@ -1855,7 +1855,7 @@
         <td><a href="https://paperswithcode.com/paper/paconv-position-adaptive-convolution-with">PAConv: Position Adaptive Convolution with Dynamic Kernel Assembling on Point Clouds</a></td>
         <td><details><summary>Abstract</summary><div>We introduce Position Adaptive Convolution (PAConv), a generic convolution operation for 3D point cloud processing. The key of PAConv is to construct the convolution kernel by dynamically assembling basic weight matrices stored in Weight Bank, where the coefficients of these weight matrices are self-adaptively learned from point positions through ScoreNet. In this way, the kernel is built in a data-driven manner, endowing PAConv with more flexibility than 2D convolutions to better handle the irregular and unordered point cloud data. Besides, the complexity of the learning process is reduced by combining weight matrices instead of brutally predicting kernels from point positions. Furthermore, different from the existing point convolution operators whose network architectures are often heavily engineered, we integrate our PAConv into classical MLP-based point cloud pipelines without changing network configurations. Even built on simple networks, our method still approaches or even surpasses the state-of-the-art models, and significantly improves baseline performance on both classification and segmentation tasks, yet with decent efficiency. Thorough ablation studies and visualizations are provided to understand PAConv. Code is released on https://github.com/CVMI-Lab/PAConv.</div></details></td>
         <td> Classification accuracy (%) on ModelNet40：93.9</td>
-        <td><a href="https://github.com/txyugood/PaddlePAConv ">快速开始</a></td>
+        <td><a href="https://github.com/txyugood/PaddlePAConv">快速开始</a></td>
     </tr>
     <tr>
         <td>21</td>
@@ -1958,7 +1958,7 @@
     <tr>
         <td>35</td>
         <td><a href="https://arxiv.org/pdf/2011.10566v1.pdf">Exploring Simple Siamese Representation Learning</a></td>
-        <td><details><summary>Abstract</summary><div>Siamese networks have become a common structure in various recent models for unsupervised visual representation learning. These models maximize the similarity between two augmentations of one image, subject to certain conditions for avoiding collapsing solutions. In this paper, we report surprising empirical results that simple Siamese networks can learn meaningful representations even using none of the following: (i) negative sample pairs, (ii) large batches, (iii) momentum encoders. Our experiments show that collapsing solutions do exist for the loss and structure, but a stop-gradient operation plays an essential role in preventing collapsing. We provide a hypothesis on the implication of stop-gradient, and further show proof-of-concept experiments verifying it. Our "SimSiam" method achieves competitive results on ImageNet and downstream tasks. We hope this simple baseline will motivate people to rethink the roles of Siamese architectures for unsupervised representation learning. Code will be made available.</div></details></td>
+        <td><details><summary>Abstract</summary><div>Siamese networks have become a common structure in various recent models for unsupervised visual representation learning. These models maximize the similarity between two augmentations of one image, subject to certain conditions for avoiding collapsing solutions. In this paper, we report surprising empirical results that simple Siamese networks can learn meaningful representations even using none of the following: (i) negative sample pairs, (ii) large batches, (iii) momentum encoders. Our experiments show that collapsing solutions do exist for the loss and structure, but a stop-gradient operation plays an essential role in preventing collapsing. We provide a hypothesis on the implication of stop-gradient, and further show proof-of-concept experiments verifying it. Our"SimSiam"method achieves competitive results on ImageNet and downstream tasks. We hope this simple baseline will motivate people to rethink the roles of Siamese architectures for unsupervised representation learning. Code will be made available.</div></details></td>
         <td>下面二者之一即可1. bs 256的情况下，top1-acc 68.3%2. bs512的情况下，top1-acc 68.1%</td>
         <td><a href="https://github.com/Mixture-of-Rookie/PASSL/tree/simsiam">快速开始</a></td>
     </tr>
@@ -1979,7 +1979,7 @@
     <tr>
         <td>38</td>
         <td><a href="https://paperswithcode.com/paper/constructing-stronger-and-faster-baselines">EfficientGCN: Constructing Stronger and Faster Baselines for Skeleton-based Action Recognition</a></td>
-        <td><details><summary>Abstract</summary><div>One essential problem in skeleton-based action recognition is how to extract discriminative features over all skeleton joints. However, the complexity of the recent State-Of-The-Art (SOTA) models for this task tends to be exceedingly sophisticated and over-parameterized. The low efficiency in model training and inference has increased the validation costs of model architectures in large-scale datasets. To address the above issue, recent advanced separable convolutional layers are embedded into an early fused Multiple Input Branches (MIB) network, constructing an efficient Graph Convolutional Network (GCN) baseline for skeleton-based action recognition. In addition, based on such the baseline, we design a compound scaling strategy to expand the model's width and depth synchronously, and eventually obtain a family of efficient GCN baselines with high accuracies and small amounts of trainable parameters, termed EfficientGCN-Bx, where "x" denotes the scaling coefficient. On two large-scale datasets, i.e., NTU RGB+D 60 and 120, the proposed EfficientGCN-B4 baseline outperforms other SOTA methods, e.g., achieving 91.7% accuracy on the cross-subject benchmark of NTU 60 dataset, while being 3.15x smaller and 3.21x faster than MS-G3D, which is one of the best SOTA methods. The source code in PyTorch version and the pretrained models are available at https://github.com/yfsong0709/EfficientGCNv1.</div></details></td>
+        <td><details><summary>Abstract</summary><div>One essential problem in skeleton-based action recognition is how to extract discriminative features over all skeleton joints. However, the complexity of the recent State-Of-The-Art (SOTA) models for this task tends to be exceedingly sophisticated and over-parameterized. The low efficiency in model training and inference has increased the validation costs of model architectures in large-scale datasets. To address the above issue, recent advanced separable convolutional layers are embedded into an early fused Multiple Input Branches (MIB) network, constructing an efficient Graph Convolutional Network (GCN) baseline for skeleton-based action recognition. In addition, based on such the baseline, we design a compound scaling strategy to expand the model's width and depth synchronously, and eventually obtain a family of efficient GCN baselines with high accuracies and small amounts of trainable parameters, termed EfficientGCN-Bx, where"x"denotes the scaling coefficient. On two large-scale datasets, i.e., NTU RGB+D 60 and 120, the proposed EfficientGCN-B4 baseline outperforms other SOTA methods, e.g., achieving 91.7% accuracy on the cross-subject benchmark of NTU 60 dataset, while being 3.15x smaller and 3.21x faster than MS-G3D, which is one of the best SOTA methods. The source code in PyTorch version and the pretrained models are available at https://github.com/yfsong0709/EfficientGCNv1.</div></details></td>
         <td>NTU RGB+D 60数据集，EfficientGCN-B0模型，X-sub=90.2%    X-view=94.9%</td>
         <td><a href="https://github.com/Wuxiao85/paddle_EfficientGCNv">快速开始</a></td>
     </tr>
@@ -2773,114 +2773,114 @@
     <tr>
         <td>1</td>
         <td>SMT-T</td>
-        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer">Scale-Aware Modulation Meet Transformer　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>2</td>
         <td>SMT-S</td>
-        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer">Scale-Aware Modulation Meet Transformer　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>3</td>
         <td>SMT-B</td>
-        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer">Scale-Aware Modulation Meet Transformer　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>4</td>
         <td>SMT-L_224_1K</td>
-        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer">Scale-Aware Modulation Meet Transformer　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>5</td>
         <td>SMT-L_384_1K</td>
-        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer">Scale-Aware Modulation Meet Transformer　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>6</td>
         <td>SMT-L_224_22K</td>
-        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer　">Scale-Aware Modulation Meet Transformer　</a></td>
+        <td><a href="https://paperswithcode.com/paper/scale-aware-modulation-meet-transformer">Scale-Aware Modulation Meet Transformer　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。充分结合CNN和Transformer的优势减轻了SA的运算负担，同时又解决了浅层的CNN局部特征捕捉能力的痛点。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/SMT_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/SMT_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>7</td>
         <td>BiFormer-T</td>
         <td><a href="https://paperswithcode.com/paper/biformer-vision-transformer-with-bi-level">BiFormer: Vision Transformer with Bi-Level Routing Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。通过设计一种自适应的分区注意力方式，使token不会关注到低相关度的token，从而提高计算效率。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/BiFormer_PADDLE　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/BiFormer_PADDLE">快速开始</a></td>
     </tr>
     <tr>
         <td>8</td>
         <td>BiFormer-S</td>
         <td><a href="https://paperswithcode.com/paper/biformer-vision-transformer-with-bi-level">BiFormer: Vision Transformer with Bi-Level Routing Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。通过设计一种自适应的分区注意力方式，使token不会关注到低相关度的token，从而提高计算效率。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/BiFormer_PADDLE　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/BiFormer_PADDLE">快速开始</a></td>
     </tr>
     <tr>
         <td>9</td>
         <td>BiFormer-B</td>
         <td><a href="https://paperswithcode.com/paper/biformer-vision-transformer-with-bi-level">BiFormer: Vision Transformer with Bi-Level Routing Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。通过设计一种自适应的分区注意力方式，使token不会关注到低相关度的token，从而提高计算效率。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/BiFormer_PADDLE　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/BiFormer_PADDLE">快速开始</a></td>
     </tr>
     <tr>
         <td>10</td>
         <td>FLatten-PVT-T</td>
         <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>11</td>
         <td>FLatten-PVTv2-B0</td>
         <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>12</td>
         <td>FLatten-Swin-T</td>
         <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>13</td>
         <td>FLatten-Swin-S</td>
         <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>14</td>
         <td>FLatten-Swin-B-224</td>
         <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>15</td>
         <td>FLatten-Swin-B-384</td>
         <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision- transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>16</td>
         <td>FLatten-CSwin-T</td>
         <td><a href="https://paperswithcode.com/paper/flatten-transformer-vision-transformer-using">FLatten Transformer: Vision Transformer using Focused Linear Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种基于Transformer的神经网络。相比于传统的注意力机制，通过两个独立的映射函数来近似Softmax操作，具有线性复杂度，能够很好地解决视觉Transformer计算量过大的问题。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Flatten_transformer_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>17</td>
@@ -2973,51 +2973,51 @@
     <tr>
         <td>1</td>
         <td>HybridNets-D0</td>
-        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">HybridNets: End-to-End Perception Network　</a></td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1">HybridNets: End-to-End Perception Network　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>2</td>
         <td>HybridNets-D1</td>
-        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">HybridNets: End-to-End Perception Network　</a></td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1">HybridNets: End-to-End Perception Network　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
         <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>3</td>
         <td>HybridNets-D2</td>
-        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">HybridNets: End-to-End Perception Network　</a></td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1">HybridNets: End-to-End Perception Network　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>4</td>
         <td>HybridNets-D3</td>
-        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">HybridNets: End-to-End Perception Network　</a></td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1">HybridNets: End-to-End Perception Network　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/HybridNets-D3_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D3_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>5</td>
         <td>HybridNets-D4</td>
-        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">　HybridNets: End-to-End Perception Network</a></td>
-        <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　　">快速开始</a></td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>HybridNets-D5</td>
-        <td><a href="　https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1">　HybridNets: End-to-End Perception Network</a></td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1">　HybridNets: End-to-End Perception Network</a></td>
         <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
         <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　">快速开始</a></td>
     </tr>
     <tr>
+        <td>6</td>
+        <td>HybridNets-D5</td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1">　HybridNets: End-to-End Perception Network</a></td>
+        <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle">快速开始</a></td>
+    </tr>
+    <tr>
         <td>7</td>
         <td>HybridNets-D6</td>
-        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1　">HybridNets: End-to-End Perception Network　</a></td>
+        <td><a href="https://paperswithcode.com/paper/hybridnets-end-to-end-perception-network-1">HybridNets: End-to-End Perception Network　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于EfficientNet的神经网络，并通过两个解码头分别进行车道线检测与车辆检测。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/HybridNets-D012456_paddle　">快速开始</a></td>
     </tr>
     <tr>
         <td>8</td>
@@ -3040,65 +3040,65 @@
     <tr>
         <td>1</td>
         <td>LESRCNN_x2</td>
-        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-2　">　Lightweight image super-resolution with enhanced CNN</a></td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-2">　Lightweight image super-resolution with enhanced CNN</a></td>
         <td><details><summary>Abstract</summary><div>这是一种轻量级的超分辨率卷积神经网络，它通过增强的CNN结构实现高效的图像分辨率提升，特别适用于需要快速处理的应用。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/lesrcnn　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/lesrcnn">快速开始</a></td>
     </tr>
     <tr>
         <td>2</td>
         <td>LESRCNN_x3</td>
-        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-2　">　Lightweight image super-resolution with enhanced CNN</a></td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-2">　Lightweight image super-resolution with enhanced CNN</a></td>
         <td><details><summary>Abstract</summary><div>这是一种轻量级的超分辨率卷积神经网络，它通过增强的CNN结构实现高效的图像分辨率提升，特别适用于需要快速处理的应用。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/lesrcnn　　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/lesrcnn　">快速开始</a></td>
     </tr>
     <tr>
         <td>3</td>
         <td>LESRCNN_x4</td>
-        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-2　">Lightweight image super-resolution with enhanced CNN　</a></td>
+        <td><a href="https://paperswithcode.com/paper/lightweight-image-super-resolution-with-2">Lightweight image super-resolution with enhanced CNN　</a></td>
         <td><details><summary>Abstract</summary><div>这是一种轻量级的超分辨率卷积神经网络，它通过增强的CNN结构实现高效的图像分辨率提升，特别适用于需要快速处理的应用。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/lesrcnn　　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/lesrcnn　">快速开始</a></td>
     </tr>
     <tr>
         <td>4</td>
         <td>CFSRCNN_x2</td>
         <td><a href="https://github.com/hellloxiaotian/CFSRCNN">Coarse-to-Fine CNN for Image Super-Resolution</a></td>
         <td><details><summary>Abstract</summary><div>该网络采用粗到细的方法进行图像超分辨率，先大致恢复图像结构，然后逐步细化细节和纹理，有效提高了图像的清晰度和细节。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/cfsrcnn_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/cfsrcnn_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>5</td>
         <td>CFSRCNN_x3</td>
         <td><a href="https://github.com/hellloxiaotian/CFSRCNN.">Coarse-to-Fine CNN for Image Super-Resolution</a></td>
         <td><details><summary>Abstract</summary><div>该网络采用粗到细的方法进行图像超分辨率，先大致恢复图像结构，然后逐步细化细节和纹理，有效提高了图像的清晰度和细节。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/cfsrcnn_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/cfsrcnn_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>6</td>
         <td>CFSRCNN_x4</td>
         <td><a href="https://github.com/hellloxiaotian/CFSRCNN.">Coarse-to-Fine CNN for Image Super-Resolution</a></td>
         <td><details><summary>Abstract</summary><div>该网络采用粗到细的方法进行图像超分辨率，先大致恢复图像结构，然后逐步细化细节和纹理，有效提高了图像的清晰度和细节。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/cfsrcnn_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/cfsrcnn_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>7</td>
         <td>ACNet_x2</td>
         <td><a href="https://paperswithcode.com/paper/asymmetric-cnn-for-image-super-resolution">Asymmetric CNN for image super-resolution</a></td>
         <td><details><summary>Abstract</summary><div>这个模型通过不对称的卷积神经网络结构来提高超分辨率的性能，使得网络可以更有效地处理和重建高分辨率图像的细节。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/ACNet_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/ACNet_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>8</td>
         <td>ACNet_x3</td>
         <td><a href="https://paperswithcode.com/paper/asymmetric-cnn-for-image-super-resolution">Asymmetric CNN for image super-resolution</a></td>
         <td><details><summary>Abstract</summary><div>这个模型通过不对称的卷积神经网络结构来提高超分辨率的性能，使得网络可以更有效地处理和重建高分辨率图像的细节。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/ACNet_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/ACNet_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>9</td>
         <td>ACNet_x4</td>
         <td><a href="https://paperswithcode.com/paper/asymmetric-cnn-for-image-super-resolution">Asymmetric CNN for image super-resolution</a></td>
         <td><details><summary>Abstract</summary><div>这个模型通过不对称的卷积神经网络结构来提高超分辨率的性能，使得网络可以更有效地处理和重建高分辨率图像的细节。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/ACNet_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/ACNet_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>10</td>
@@ -3112,28 +3112,28 @@
         <td>DSRNet_x3</td>
         <td><a href="https://paperswithcode.com/paper/image-super-resolution-via-dynamic-network">Image super-resolution via dynamic network</a></td>
         <td><details><summary>Abstract</summary><div>该网络通过动态调整其结构来适应不同的超分辨率任务，能够根据图像的特定特征和需求灵活调整其处理流程。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/DSRNet_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/DSRNet_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>12</td>
         <td>DSRNet_x4</td>
         <td><a href="https://paperswithcode.com/paper/image-super-resolution-via-dynamic-network">Image super-resolution via dynamic network</a></td>
         <td><details><summary>Abstract</summary><div>该网络通过动态调整其结构来适应不同的超分辨率任务，能够根据图像的特定特征和需求灵活调整其处理流程。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/DSRNet_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/DSRNet_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>13</td>
         <td>hgsrcnn</td>
         <td><a href="https://paperswithcode.com/paper/a-heterogeneous-group-cnn-for-image-super">A heterogeneous group CNN for image super-resolution</a></td>
         <td><details><summary>Abstract</summary><div>这个网络使用了异构组卷积结构，它将不同类型的卷积层组合起来，以更全面地捕捉图像的多层次特征，从而有效地提高图像分辨率。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/HGSRCNN_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/HGSRCNN_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>14</td>
         <td>lsgsrcnn</td>
         <td><a href="https://paperswithcode.com/paper/a-heterogeneous-group-cnn-for-image-super">A heterogeneous group CNN for image super-resolution</a></td>
         <td><details><summary>Abstract</summary><div>这个网络使用了异构组卷积结构，它将不同类型的卷积层组合起来，以更全面地捕捉图像的多层次特征，从而有效地提高图像分辨率。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/HGSRCNN_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/HGSRCNN_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>15</td>
@@ -3422,44 +3422,44 @@
     <tr>
         <td>1</td>
         <td>RIDNet</td>
-        <td><a href="https://paperswithcode.com/paper/real-image-denoising-with-feature-attention　">　Real Image Denoising with Feature Attention</a></td>
+        <td><a href="https://paperswithcode.com/paper/real-image-denoising-with-feature-attention">　Real Image Denoising with Feature Attention</a></td>
         <td><details><summary>Abstract</summary><div>一种真实图像去噪网络，使用特征注意机制来更有效地识别并处理噪点。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/RIDNet_Paddle-main　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/RIDNet_Paddle-main">快速开始</a></td>
     </tr>
     <tr>
         <td>2</td>
         <td>DRANet</td>
-        <td><a href="https://paperswithcode.com/paper/dual-residual-attention-network-for-image　">Dual Residual Attention Network for Image Denoising　</a></td>
+        <td><a href="https://paperswithcode.com/paper/dual-residual-attention-network-for-image">Dual Residual Attention Network for Image Denoising　</a></td>
         <td><details><summary>Abstract</summary><div>用于图像去噪的网络，通过双重残差和注意力机制来提高去噪效果。</div></details></td>
         <td><a href="https://github.com/XDpaddle/DRANet_Paddle-main">快速开始</a></td>
     </tr>
     <tr>
         <td>3</td>
         <td>NBNet</td>
-        <td><a href="https://paperswithcode.com/paper/nbnet-noise-basis-learning-for-image　">　NBNet: Noise Basis Learning for Image Denoising with Subspace Projection</a></td>
+        <td><a href="https://paperswithcode.com/paper/nbnet-noise-basis-learning-for-image">　NBNet: Noise Basis Learning for Image Denoising with Subspace Projection</a></td>
         <td><details><summary>Abstract</summary><div>一种图像去噪网络，通过学习噪声基础和子空间投影来有效地减少噪声。</div></details></td>
         <td><a href="https://github.com/XDpaddle/NBNet_Paddle-main">快速开始</a></td>
     </tr>
     <tr>
         <td>4</td>
         <td>N2Net</td>
-        <td><a href="https://paperswithcode.com/paper/neighbor2neighbor-self-supervised-denoising　">Neighbor2Neighbor: Self-Supervised Denoising from Single Noisy Images　</a></td>
+        <td><a href="https://paperswithcode.com/paper/neighbor2neighbor-self-supervised-denoising">Neighbor2Neighbor: Self-Supervised Denoising from Single Noisy Images　</a></td>
         <td><details><summary>Abstract</summary><div>一种自监督的单幅噪声图像去噪方法，通过学习图像邻域间的关系来降低噪声。</div></details></td>
         <td><a href="https://github.com/XDpaddle/N2NNet_Paddle-main">快速开始</a></td>
     </tr>
     <tr>
         <td>5</td>
         <td>SRMNet</td>
-        <td><a href="https://paperswithcode.com/paper/selective-residual-m-net-for-real-image　">　Selective Residual M-Net for Real Image Denoising</a></td>
+        <td><a href="https://paperswithcode.com/paper/selective-residual-m-net-for-real-image">　Selective Residual M-Net for Real Image Denoising</a></td>
         <td><details><summary>Abstract</summary><div>专门用于实际图像去噪的网络，采用选择性残差机制来提升处理效果。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/SRMNet_Paddle-main　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/SRMNet_Paddle-main">快速开始</a></td>
     </tr>
     <tr>
         <td>6</td>
         <td>DCANet</td>
-        <td><a href="https://paperswithcode.com/paper/dcanet-dual-convolutional-neural-network-with　">DCANet: Dual Convolutional Neural Network with Attention for Image Blind Denoising　</a></td>
+        <td><a href="https://paperswithcode.com/paper/dcanet-dual-convolutional-neural-network-with">DCANet: Dual Convolutional Neural Network with Attention for Image Blind Denoising　</a></td>
         <td><details><summary>Abstract</summary><div>一种图像盲去噪网络，使用双重卷积神经网络和注意力机制来提升去噪性能</div></details></td>
-        <td><a href="https://github.com/XDpaddle/DCANet_Paddle-main　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/DCANet_Paddle-main">快速开始</a></td>
     </tr>
     <tr>
         <td>7</td>
@@ -3503,49 +3503,49 @@
     <tr>
         <td>1</td>
         <td>Hyconditm</td>
-        <td><a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548129　">　Hybrid Conditional Deep Inverse Tone Mapping.</a></td>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548129">　Hybrid Conditional Deep Inverse Tone Mapping.</a></td>
         <td><details><summary>Abstract</summary><div>一种基于深度学习的SDR-to-HDR解决方案，混合条件深度逆色调映射(HyCondITM)，这是一个端到端的可训练框架，包括在单个统一管道中的全局变换、局部调整和细节细化。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Hyconditm_Paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Hyconditm_Paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>2</td>
         <td>CSRNet</td>
-        <td><a href="　https://paperswithcode.com/paper/conditional-sequential-modulation-for-1">Conditional Sequential Modulation for Efficient Global Image Retouching　</a></td>
+        <td><a href="https://paperswithcode.com/paper/conditional-sequential-modulation-for-1">Conditional Sequential Modulation for Efficient Global Image Retouching　</a></td>
         <td><details><summary>Abstract</summary><div>CSRNet由一个基础网络和一个条件网络组成。基本网络的作用类似于独立处理每个像素的MLP，并且条件网络提取输入图像的全局特征以生成条件向量。</div></details></td>
         <td><a href="https://github.com/XDpaddle/CSRNet_Paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>3</td>
         <td>Deep SR-ITM-base</td>
-        <td><a href="　https://paperswithcode.com/paper/deep-sr-itm-joint-learning-of-super">Deep SR-ITM: Joint Learning of Super-Resolution and  Inverse Tone-Mapping for 4K UHD HDR Applications　</a></td>
+        <td><a href="https://paperswithcode.com/paper/deep-sr-itm-joint-learning-of-super">Deep SR-ITM: Joint Learning of Super-Resolution and  Inverse Tone-Mapping for 4K UHD HDR Applications　</a></td>
         <td><details><summary>Abstract</summary><div>专门为4K超高清（UHD）高动态范围（HDR）应用设计。这个网络结合了超分辨率（SR）和逆色调映射（ITM）的任务，以提高图像质量和动态范围。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Deep-sr-itm-base_Paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Deep-sr-itm-base_Paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>4</td>
         <td>HDRUNet</td>
-        <td><a href="　https://paperswithcode.com/paper/hdrunet-single-image-hdr-reconstruction-with">　HDRUNet: Single Image HDR Reconstruction with Denoising and Dequantization</a></td>
+        <td><a href="https://paperswithcode.com/paper/hdrunet-single-image-hdr-reconstruction-with">　HDRUNet: Single Image HDR Reconstruction with Denoising and Dequantization</a></td>
         <td><details><summary>Abstract</summary><div>一种用于单图像高动态范围重建的网络，同时包含去噪和去量化功能，用于提升图像质量。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/HDRUnet_Paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/HDRUnet_Paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>5</td>
         <td>HDRTVNet-HG</td>
-        <td><a href="https://paperswithcode.com/paper/a-new-journey-from-sdrtv-to-hdrtv　">A New Journey from SDRTV to HDRTV　</a></td>
+        <td><a href="https://paperswithcode.com/paper/a-new-journey-from-sdrtv-to-hdrtv">A New Journey from SDRTV to HDRTV　</a></td>
         <td><details><summary>Abstract</summary><div>一个旨在从标准动态范围电视转向高动态范围电视的图像处理方法，专注于改善图像的动态范围和细节。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/HDRTVNet-HG_Paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/HDRTVNet-HG_Paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>6</td>
         <td>HDRTVNet-AGCM</td>
-        <td><a href="https://paperswithcode.com/paper/a-new-journey-from-sdrtv-to-hdrtv　　">A New Journey from SDRTV to HDRTV　</a></td>
+        <td><a href="https://paperswithcode.com/paper/a-new-journey-from-sdrtv-to-hdrtv　">A New Journey from SDRTV to HDRTV　</a></td>
         <td><details><summary>Abstract</summary><div>一个旨在从标准动态范围电视转向高动态范围电视的图像处理方法，专注于改善图像的动态范围和细节。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/HDRTVNet-AGCM_Paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/HDRTVNet-AGCM_Paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>7</td>
         <td>HDRTVNet-LE</td>
-        <td><a href="https://paperswithcode.com/paper/a-new-journey-from-sdrtv-to-hdrtv　　">A New Journey from SDRTV to HDRTV　</a></td>
+        <td><a href="https://paperswithcode.com/paper/a-new-journey-from-sdrtv-to-hdrtv　">A New Journey from SDRTV to HDRTV　</a></td>
         <td><details><summary>Abstract</summary><div>一个旨在从标准动态范围电视转向高动态范围电视的图像处理方法，专注于改善图像的动态范围和细节。</div></details></td>
         <td><a href="https://github.com/XDpaddle/HDRTVNet-LE_Paddle">快速开始</a></td>
     </tr>
@@ -3563,51 +3563,51 @@
     <tr>
         <td>1</td>
         <td>siamrpn_alex_dwxcorr</td>
-        <td><a href="https://paperswithcode.com/paper/high-performance-visual-tracking-with-siamese　">　High Performance Visual Tracking With Siamese Region Proposal Network</a></td>
+        <td><a href="https://paperswithcode.com/paper/high-performance-visual-tracking-with-siamese">　High Performance Visual Tracking With Siamese Region Proposal Network</a></td>
         <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。通过孪生网络结构提取特征，然后利用RPN来评估这些候选区域与目标的相似度。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Pysot_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>2</td>
         <td>siamrpn_alex_dwxcorr_otb</td>
-        <td><a href="　https://paperswithcode.com/paper/high-performance-visual-tracking-with-siamese">High Performance Visual Tracking With Siamese Region Proposal Network　</a></td>
+        <td><a href="https://paperswithcode.com/paper/high-performance-visual-tracking-with-siamese">High Performance Visual Tracking With Siamese Region Proposal Network　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。通过孪生网络结构提取特征，然后利用RPN来评估这些候选区域与目标的相似度。</div></details></td>
         <td><a href="https://github.com/XDpaddle/Pysot_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>3</td>
         <td>siamrpn_r50_dwxcorr</td>
-        <td><a href="　https://paperswithcode.com/paper/high-performance-visual-tracking-with-siamese">High Performance Visual Tracking With Siamese Region Proposal Network　</a></td>
+        <td><a href="https://paperswithcode.com/paper/high-performance-visual-tracking-with-siamese">High Performance Visual Tracking With Siamese Region Proposal Network　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。通过孪生网络结构提取特征，然后利用RPN来评估这些候选区域与目标的相似度。</div></details></td>
         <td><a href="https://github.com/XDpaddle/Pysot_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>4</td>
         <td>siamrpn_r50_dwxcorr_lt</td>
-        <td><a href="https://paperswithcode.com/paper/siamrpn-evolution-of-siamese-visual-tracking　">　SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks</a></td>
+        <td><a href="https://paperswithcode.com/paper/siamrpn-evolution-of-siamese-visual-tracking">　SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks</a></td>
         <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。相比与SiamRPN 模型进行了三个关键改进：增加深度、引入注意力机制和引入区域池化。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Pysot_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>5</td>
         <td>siamrpn_r50_dwxcorr_otb</td>
-        <td><a href="　https://paperswithcode.com/paper/siamrpn-evolution-of-siamese-visual-tracking">SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks　</a></td>
+        <td><a href="https://paperswithcode.com/paper/siamrpn-evolution-of-siamese-visual-tracking">SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。相比与SiamRPN 模型进行了三个关键改进：增加深度、引入注意力机制和引入区域池化。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Pysot_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>6</td>
         <td>siamrpn_mobilev2_dwxcorr</td>
-        <td><a href="　https://paperswithcode.com/paper/siamrpn-evolution-of-siamese-visual-tracking">SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks　</a></td>
+        <td><a href="https://paperswithcode.com/paper/siamrpn-evolution-of-siamese-visual-tracking">SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks　</a></td>
         <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。相比与SiamRPN 模型进行了三个关键改进：增加深度、引入注意力机制和引入区域池化。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Pysot_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle">快速开始</a></td>
     </tr>
     <tr>
         <td>7</td>
         <td>siammask_r50</td>
-        <td><a href="　https://paperswithcode.com/paper/siammask-a-framework-for-fast-online-object">　SiamMask: A Framework for Fast Online Object Tracking and Segmentation</a></td>
+        <td><a href="https://paperswithcode.com/paper/siammask-a-framework-for-fast-online-object">　SiamMask: A Framework for Fast Online Object Tracking and Segmentation</a></td>
         <td><details><summary>Abstract</summary><div>一种基于孪生神经网络的卷积神经网络。SiamMask 基于孪生网络结构，将目标跟踪和分割任务统一在一个框架中，提供实时的目标跟踪和精确的目标分割结果。</div></details></td>
-        <td><a href="https://github.com/XDpaddle/Pysot_paddle　">快速开始</a></td>
+        <td><a href="https://github.com/XDpaddle/Pysot_paddle">快速开始</a></td>
     </tr>
 </table>
 
